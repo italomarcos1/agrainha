@@ -13,13 +13,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
-    body, input, button {
-      border:0;
-      outline: 0;
-
-      font-family: 'Roboto', sans-serif;
-    }
-
+    
     *:focus{
         outline: 0;
     }
@@ -57,8 +51,11 @@ export default createGlobalStyle`
       src: local('SFProLight'), url(${SFProLight}) format('opentype');
     }
 
+
     body, input, button {
-        font: 14px 'SFPro', sans-serif;
+      border:0;
+      outline: 0;
+      font: 14px 'SFPro', sans-serif;
     }
 
     a {
