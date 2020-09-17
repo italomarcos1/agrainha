@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { Container, Item } from './styles';
 
@@ -24,9 +24,9 @@ function Header() {
       <Item to="/search" active={pathname === '/search'}>
         <img src={pathname === '/search' ? close : search} alt="search" />
       </Item>
-      <Item to="/" style={{ width: 111, height: 34, background: 'none' }}>
+      <Link to="/">
         <img src={logo} alt="Logo" />
-      </Item>
+      </Link>
       <Item to="/profile" active={pathname === '/profile'}>
         <img
           src={pathname === '/profile' ? person_active : person}
