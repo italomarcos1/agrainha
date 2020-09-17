@@ -40,8 +40,8 @@ export const SearchBar = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 20px;
-      height: 20px;
+      width: 31px;
+      height: 31px;
       margin-left: 10px;
       background: none;
       border: none;
