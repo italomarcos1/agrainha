@@ -24,7 +24,7 @@ function Header() {
       <Item to="/search" active={pathname === '/search'}>
         <img src={pathname === '/search' ? close : search} alt="search" />
       </Item>
-      <Link to="/">
+      <Link to="/" style={{ marginHorizontal: 5 }}>
         <img src={logo} alt="Logo" />
       </Link>
       <Item to="/profile" active={pathname === '/profile'}>
