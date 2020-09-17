@@ -22,6 +22,7 @@ export const SearchBar = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    padding-right: 5px;
 
     input {
       font-family: 'SFPro';
