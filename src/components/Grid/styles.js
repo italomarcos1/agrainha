@@ -6,7 +6,6 @@ export const Container = styled.div`
   height: 100%;
   flex: 1;
   width: 100%;
-  background-color: #404;
   align-items: flex-start;
   justify-content: space-between;
 `;

@@ -4,6 +4,6 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   flex: 1;
-  background-color: #4f4;
+  background-color: #f5f5f5;
   padding: 20px;
 `;

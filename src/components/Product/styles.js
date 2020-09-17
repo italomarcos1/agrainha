@@ -13,39 +13,101 @@ export const Container = styled.div`
   margin-right: ${({ index }) => (index % 2 === 0 ? '0' : '10')}px;
   margin-left: ${({ index }) => (index % 2 === 0 ? '10' : '0')}px;
   justify-content: space-between;
+  font-family: 'SFPro';
 
-  img {
-    width: 160px;
-    height: 160px;
-  }
-
-  strong {
+  > strong {
     color: #393939;
-    font-family: 'SFPro';
-    text-align: left;
     line-height: 22px;
     font-size: 15px;
-    padding: 15px;
+    padding: 0 10px;
     margin: 10px 0;
+    height: 70px;
+    /* background-color: #ff4; */
   }
 `;
 
-export const Content = styled.div`
-  height: 100px;
-  width: 100%;
-  background-color: #ff4;
+export const ImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  width: 160px;
+  height: 160px;
+  padding: 10px;
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 export const PriceContainer = styled.div`
   display: flex;
-  height: 55px;
+  flex-direction: column;
+  height: 65px;
   width: 100%;
-  background-color: #404;
+  /* background-color: #404; */
+
+  span {
+    display: flex;
+    color: #e2a63b;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  small {
+    color: #989898;
+    text-align: left;
+    font-size: 10px;
+    line-height: 22px;
+  }
+
+  > strong {
+    color: #393939;
+    text-align: left;
+    font-size: 20px;
+    line-height: 22px;
+  }
 `;
 
 export const Options = styled.div`
   display: flex;
   height: 55px;
   width: 100%;
-  background-color: #4f4;
+  /* background-color: #4f4; */
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    strong {
+      font-size: 18px;
+      color: #393939;
+      margin: 0 10px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      background-color: #f2f2f2;
+      border-radius: 50%;
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    /* background-color: #a4b91d; */
+    border-radius: 4px;
+  }
 `;
