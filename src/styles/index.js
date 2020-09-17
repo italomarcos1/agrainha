@@ -58,6 +58,10 @@ export default createGlobalStyle`
       font: 14px 'SFPro', sans-serif;
     }
 
+    body{
+      background-color:#f5f5f5;
+    }
+
     a {
         text-decoration: none;
     }

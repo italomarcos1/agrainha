@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 47.37%;
-  height: 360px;
+  height: 370px;
   /* background-color: #fff; */
   background-color: ${({ lastItem }) => (lastItem ? '#f0f' : '#fff')};
   border-radius: 4px;
@@ -47,6 +47,8 @@ export const PriceContainer = styled.div`
   flex-direction: column;
   height: 65px;
   width: 100%;
+  padding: 0 10px;
+
   /* background-color: #404; */
 
   span {
@@ -78,6 +80,9 @@ export const Options = styled.div`
   /* background-color: #4f4; */
   align-items: center;
   justify-content: space-between;
+  padding: 0 10px;
+  padding-right: 5px;
+  margin-top: 10px;
 
   div {
     display: flex;
@@ -107,7 +112,7 @@ export const Options = styled.div`
     justify-content: center;
     width: 45px;
     height: 45px;
-    /* background-color: #a4b91d; */
+    background-color: #a4b91d;
     border-radius: 4px;
   }
 `;
