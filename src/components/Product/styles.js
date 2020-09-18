@@ -54,7 +54,7 @@ export const PriceContainer = styled.div`
   span {
     display: flex;
     color: #e2a63b;
-    font-size: 10px;
+    font-size: 8px;
     align-items: center;
 
     strong {
