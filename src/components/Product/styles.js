@@ -29,7 +29,7 @@ export const Container = styled.div`
       width: 45.82%;
 
       overflow: hidden;
-      white-space: pre;
+      /* white-space: pre; */
       text-overflow: ellipsis;
       background-color: #ff4;
     }
