@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   /* width: 47.37%; */
-  width: 33.33%;
+  width: 41.66%;
   height: 370px;
   background-color: #fff;
   /* background-color: ${({ lastItem }) => (lastItem ? '#f0f' : '#fff')}; */
