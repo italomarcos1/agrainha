@@ -100,7 +100,7 @@ export const Options = styled.div`
       align-items: center;
       justify-content: center;
       width: 41.8%;
-      height: 55px;
+      height: 35px;
       /* height: 100%; */
       background-color: #f2f2f2;
       border-radius: 50%;
