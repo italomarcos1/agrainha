@@ -14,7 +14,7 @@ export default function Product({ product }) {
       <ImageContainer>
         <img src={product.picture} alt="Product" />
       </ImageContainer>
-      <div>{product.title}</div>
+      <div className="content">{product.title}</div>
       <PriceContainer>
         <span>
           <img

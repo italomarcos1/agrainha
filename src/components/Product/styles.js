@@ -17,19 +17,21 @@ export const Container = styled.div`
   justify-content: space-between;
   font-family: 'SFPro';
 
-  > div {
-    color: #393939;
-    font-family: 'SFProLight';
-    line-height: 22px;
-    font-size: 15px;
-    padding: 0 5px;
-    margin: 10px 0;
-    height: 70px;
+  div {
+    .content {
+      color: #393939;
+      font-family: 'SFProLight';
+      line-height: 22px;
+      font-size: 15px;
+      padding: 0 5px;
+      margin: 10px 0;
+      height: 70px;
 
-    overflow: hidden;
-    /* white-space: nowrap; */
-    text-overflow: ellipsis;
-    /* background-color: #ff4; */
+      overflow: hidden;
+      /* white-space: nowrap; */
+      text-overflow: ellipsis;
+      /* background-color: #ff4; */
+    }
   }
 `;
 
