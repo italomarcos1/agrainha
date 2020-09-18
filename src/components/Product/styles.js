@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 47.37%;
+  /* width: 47.37%; */
+  width: 33.33%;
   height: 370px;
-  /* background-color: #fff; */
-  background-color: ${({ lastItem }) => (lastItem ? '#f0f' : '#fff')};
+  background-color: #fff;
+  /* background-color: ${({ lastItem }) => (lastItem ? '#f0f' : '#fff')}; */
   border-radius: 4px;
-  opacity: ${({ lastItem }) => (lastItem ? 0 : 1)};
+  /* opacity: ${({ lastItem }) => (lastItem ? 0 : 1)}; */
   margin-bottom: 20px;
   margin-right: ${({ index }) => (index % 2 === 0 ? '0' : '10')}px;
   margin-left: ${({ index }) => (index % 2 === 0 ? '10' : '0')}px;
