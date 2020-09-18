@@ -3,17 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  /* width: 47.37%; */
-  /* width: 41.66%; */
   width: 45.82%;
   height: 370px;
   background-color: #fff;
-  /* background-color: ${({ lastItem }) => (lastItem ? '#f0f' : '#fff')}; */
   border-radius: 4px;
-  /* opacity: ${({ lastItem }) => (lastItem ? 0 : 1)}; */
   margin-bottom: 20px;
-  /* margin-right: ${({ index }) => (index % 2 === 0 ? '0' : '10')}px; */
-  /* margin-left: ${({ index }) => (index % 2 === 0 ? '10' : '0')}px; */
   justify-content: space-between;
   font-family: 'SFPro';
 
@@ -30,7 +24,7 @@ export const Container = styled.div`
 
       overflow: hidden;
       text-overflow: ellipsis;
-      background-color: #ff4;
+      /* background-color: #ff4; */
     }
   }
 `;
@@ -56,7 +50,7 @@ export const PriceContainer = styled.div`
   padding: 0 5px;
   font-family: 'SFPro';
 
-  background-color: #404;
+  /* background-color: #404; */
 
   span {
     padding: 0;
@@ -65,7 +59,7 @@ export const PriceContainer = styled.div`
     font-size: 8px;
     height: 20px;
     align-items: center;
-    background-color: #4f4;
+    /* background-color: #4f4; */
 
     strong {
       font-size: 9px;
@@ -100,7 +94,7 @@ export const Options = styled.div`
   display: flex;
   height: 55px;
   width: 100%;
-  background-color: #4f4;
+  /* background-color: #4f4; */
   align-items: center;
   justify-content: space-between;
   padding-left: 2px;
