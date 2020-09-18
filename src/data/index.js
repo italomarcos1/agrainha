@@ -10,7 +10,7 @@ import pao from '~/assets/products/pao@2x.png';
 import suco from '~/assets/products/suco@2x.png';
 import vinho from '~/assets/products/vinho@2x.png';
 
-export const products = [
+export default [
   {
     id: 1,
     picture: agua1l,

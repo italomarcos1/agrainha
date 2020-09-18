@@ -8,6 +8,8 @@ import acp from '~/assets/banners/acp@2x.png';
 import parceiro1 from '~/assets/banners/parceiro-1@2x.png';
 import parceiro2 from '~/assets/banners/parceiro-2@2x.png';
 
+import data from '~/data';
+
 import { Container } from './styles';
 
 export default function Home() {
@@ -30,13 +32,9 @@ export default function Home() {
         style={{ width: '100%', marginTop: 11 }}
       />
       <Grid>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        {data.map(p => (
+          <Product key={p.id} product={p} />
+        ))}
       </Grid>
     </Container>
   );

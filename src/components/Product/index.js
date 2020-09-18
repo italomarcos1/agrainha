@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import product from '~/assets/product.jpeg';
 import coins from '~/assets/coins.svg';
 import basket_active from '~/assets/icons/basket_active.svg';
 import minus from '~/assets/minus.svg';
@@ -8,15 +8,13 @@ import plus from '~/assets/plus.svg';
 
 import { Container, ImageContainer, PriceContainer, Options } from './styles';
 
-export default function Product() {
+export default function Product({ product }) {
   return (
     <Container>
       <ImageContainer>
-        <img src={product} alt="Product" />
+        <img src={product.picture} alt="Product" />
       </ImageContainer>
-      <strong>
-        Água com Gás Mineral Natural Gaseificada 25 cl Castello PH de 20º
-      </strong>
+      <strong>{product.title}</strong>
       <PriceContainer>
         <span>
           <img
@@ -38,10 +36,10 @@ export default function Product() {
               textDecoration: 'line-through',
             }}
           >
-            €2,910,99
+            {product.oldPrice}
           </p>
         </small>
-        <strong>€1.900,80</strong>
+        <strong>{product.price}</strong>
       </PriceContainer>
       <Options>
         <div>
@@ -60,3 +58,12 @@ export default function Product() {
     </Container>
   );
 }
+
+Product.propTypes = {
+  product: PropTypes.shape({
+    title: PropTypes.string,
+    picture: PropTypes.string,
+    oldPrice: PropTypes.string,
+    price: PropTypes.string,
+  }).isRequired,
+};
