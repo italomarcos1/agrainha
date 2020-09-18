@@ -20,7 +20,7 @@ export default function Product({ product }) {
           <img
             src={coins}
             alt="coins"
-            style={{ width: '15%', marginRight: 3 }}
+            style={{ width: '15%', marginRight: 1 }}
           />
           <strong>€1.290,08</strong>
           DE CRÉDITO

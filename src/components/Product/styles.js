@@ -59,15 +59,15 @@ export const PriceContainer = styled.div`
     padding: 0;
     display: flex;
     color: #e2a63b;
-    font-size: 7.5px;
+    font-size: 8.5px;
     height: 20px;
     align-items: center;
     background-color: #4f4;
 
     strong {
-      font-size: 8.5px;
+      font-size: 9px;
       font-family: 'SFProSemibold';
-      margin-right: 3px;
+      margin-right: 1px;
     }
   }
 
