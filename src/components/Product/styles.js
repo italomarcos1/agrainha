@@ -58,7 +58,7 @@ export const PriceContainer = styled.div`
     align-items: center;
 
     strong {
-      font-size: 10px;
+      font-size: 8px;
     }
   }
 
