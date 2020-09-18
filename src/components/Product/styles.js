@@ -33,13 +33,10 @@ export const ImageContainer = styled.div`
   justify-content: center;
   align-self: center;
 
-  width: 160px;
-  height: 160px;
-  padding: 10px;
+  width: 100%;
 
   img {
-    width: 150px;
-    height: 150px;
+    width: 93.75%;
   }
 `;
 
