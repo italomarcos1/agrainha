@@ -39,7 +39,7 @@ export default function Product({ product }) {
             {product.oldPrice}
           </p>
         </small>
-        <strong>{product.price}</strong>
+        <strong>{product.newPrice}</strong>
       </PriceContainer>
       <Options>
         <div>
@@ -64,6 +64,6 @@ Product.propTypes = {
     title: PropTypes.string,
     picture: PropTypes.string,
     oldPrice: PropTypes.string,
-    price: PropTypes.string,
+    newPrice: PropTypes.string,
   }).isRequired,
 };

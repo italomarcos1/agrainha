@@ -21,7 +21,7 @@ export const Container = styled.div`
     color: #393939;
     line-height: 22px;
     font-size: 15px;
-    padding: 0 10px;
+    padding: 0 5px;
     margin: 10px 0;
     height: 70px;
     background-color: #ff4;
@@ -99,7 +99,7 @@ export const Options = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 33.3%;
+      width: 41.8%;
       height: 55px;
       /* height: 100%; */
       background-color: #f2f2f2;
