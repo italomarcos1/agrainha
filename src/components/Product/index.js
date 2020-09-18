@@ -24,7 +24,6 @@ export default function Product({ product }) {
           />
           <strong
             style={{
-              fontWeight: 'bold',
               fontFamily: 'SFProSemibold',
               marginRight: 3,
             }}
@@ -45,7 +44,13 @@ export default function Product({ product }) {
             €{product.oldPrice}
           </p>
         </small>
-        <strong>€{product.newPrice}</strong>
+        <strong
+          style={{
+            fontFamily: 'SFProSemibold',
+          }}
+        >
+          €{product.newPrice}
+        </strong>
       </PriceContainer>
       <Options>
         <div>
