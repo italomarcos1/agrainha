@@ -30,7 +30,7 @@ export const Container = styled.div`
       overflow: hidden;
       /* white-space: nowrap; */
       text-overflow: ellipsis;
-      /* background-color: #ff4; */
+      background-color: #ff4;
     }
   }
 `;
