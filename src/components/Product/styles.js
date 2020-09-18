@@ -132,7 +132,7 @@ export const Options = styled.div`
     align-items: center;
     justify-content: center;
     width: 35%;
-    height: 100%;
+    height: 93%;
 
     /* width: 45px; */
     /* height: 45px; */
