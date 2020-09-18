@@ -36,10 +36,10 @@ export default function Product({ product }) {
               textDecoration: 'line-through',
             }}
           >
-            {product.oldPrice}
+            €{product.oldPrice}
           </p>
         </small>
-        <strong>{product.newPrice}</strong>
+        <strong>€{product.newPrice}</strong>
       </PriceContainer>
       <Options>
         <div>
