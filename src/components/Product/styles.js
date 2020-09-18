@@ -16,6 +16,10 @@ export const Container = styled.div`
   /* margin-left: ${({ index }) => (index % 2 === 0 ? '10' : '0')}px; */
   justify-content: space-between;
   font-family: 'SFPro';
+  overflow: hidden;
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
 
   > strong {
     color: #393939;
@@ -62,7 +66,7 @@ export const PriceContainer = styled.div`
     background-color: #4f4;
 
     strong {
-      font-size: 8px;
+      font-size: 8.5px;
       font-family: 'SFProSemibold';
       margin-right: 3px;
     }
