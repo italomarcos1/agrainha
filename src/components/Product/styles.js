@@ -19,6 +19,7 @@ export const Container = styled.div`
 
   > strong {
     color: #393939;
+    font-family: 'SFProLight';
     line-height: 22px;
     font-size: 15px;
     padding: 0 5px;
@@ -55,7 +56,7 @@ export const PriceContainer = styled.div`
     padding: 0;
     display: flex;
     color: #e2a63b;
-    font-size: 7px;
+    font-size: 7.5px;
     align-items: center;
     background-color: #4f4;
 
