@@ -28,7 +28,7 @@ export const Container = styled.div`
       height: 70px;
 
       overflow: hidden;
-      /* white-space: nowrap; */
+      white-space: nowrap;
       text-overflow: ellipsis;
       background-color: #ff4;
     }
