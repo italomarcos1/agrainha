@@ -49,18 +49,18 @@ export const PriceContainer = styled.div`
   padding: 0 5px;
   font-family: 'SFPro';
 
-  /* background-color: #404; */
+  background-color: #404;
 
   span {
     padding: 0;
     display: flex;
     color: #e2a63b;
-    font-size: 7.5px;
+    font-size: 7px;
     align-items: center;
-    /* background-color: #4f4; */
+    background-color: #4f4;
 
     strong {
-      font-size: 9px;
+      font-size: 8px;
     }
   }
 
