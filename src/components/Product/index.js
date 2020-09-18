@@ -22,7 +22,13 @@ export default function Product({ product }) {
             alt="coins"
             style={{ width: '15%', marginRight: 3 }}
           />
-          <strong style={{ fontWeight: 'bold', marginRight: 3 }}>
+          <strong
+            style={{
+              fontWeight: 'bold',
+              fontFamily: 'SFProSemibold',
+              marginRight: 3,
+            }}
+          >
             €1.290,08
           </strong>
           DE CRÉDITO
