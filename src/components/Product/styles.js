@@ -47,6 +47,7 @@ export const PriceContainer = styled.div`
   height: 65px;
   width: 100%;
   padding: 0 10px;
+  font-family: 'SFPro';
 
   background-color: #404;
 
@@ -102,7 +103,7 @@ export const Options = styled.div`
       /* width: 41.8%; */
       /* height: 35px; */
       flex: 1;
-      padding: 10px;
+      padding: 15px;
       /* height: 100%; */
       background-color: #f2f2f2;
       border-radius: 50%;
