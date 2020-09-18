@@ -99,8 +99,10 @@ export const Options = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 41.8%;
-      height: 35px;
+      /* width: 41.8%; */
+      /* height: 35px; */
+      flex: 1;
+      padding: 10px;
       /* height: 100%; */
       background-color: #f2f2f2;
       border-radius: 50%;
