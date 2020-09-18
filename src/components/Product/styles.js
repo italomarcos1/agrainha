@@ -23,14 +23,12 @@ export const Container = styled.div`
       font-family: 'SFProLight';
       line-height: 22px;
       font-size: 15px;
-      /* padding: 0 5px; */
       padding: 0;
       margin: 10px 0;
       height: 70px;
-      width: 50px;
+      width: 100%;
 
       overflow: hidden;
-      /* white-space: pre; */
       text-overflow: ellipsis;
       background-color: #ff4;
     }
