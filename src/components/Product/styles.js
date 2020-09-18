@@ -87,19 +87,21 @@ export const Options = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 62.5%;
 
     strong {
       font-size: 18px;
       color: #393939;
-      margin: 0 10px;
+      margin: 0 5px;
     }
 
     button {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 45px;
-      height: 45px;
+      width: 33.3%;
+      height: 55px;
+      /* height: 100%; */
       background-color: #f2f2f2;
       border-radius: 50%;
     }
@@ -109,8 +111,11 @@ export const Options = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 28.12%;
+    height: 100%;
+
+    /* width: 45px; */
+    /* height: 45px; */
     background-color: #a4b91d;
     border-radius: 4px;
   }
