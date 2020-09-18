@@ -46,7 +46,7 @@ export const PriceContainer = styled.div`
   flex-direction: column;
   height: 65px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 5px;
   font-family: 'SFPro';
 
   background-color: #404;
@@ -54,7 +54,7 @@ export const PriceContainer = styled.div`
   span {
     display: flex;
     color: #e2a63b;
-    font-size: 12px;
+    font-size: 10px;
     align-items: center;
   }
 
