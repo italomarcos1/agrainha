@@ -12,8 +12,8 @@ export const Container = styled.div`
   border-radius: 4px;
   /* opacity: ${({ lastItem }) => (lastItem ? 0 : 1)}; */
   margin-bottom: 20px;
-  margin-right: ${({ index }) => (index % 2 === 0 ? '0' : '10')}px;
-  margin-left: ${({ index }) => (index % 2 === 0 ? '10' : '0')}px;
+  /* margin-right: ${({ index }) => (index % 2 === 0 ? '0' : '10')}px; */
+  /* margin-left: ${({ index }) => (index % 2 === 0 ? '10' : '0')}px; */
   justify-content: space-between;
   font-family: 'SFPro';
 
@@ -25,7 +25,7 @@ export const Container = styled.div`
     padding: 0 5px;
     margin: 10px 0;
     height: 70px;
-    background-color: #ff4;
+    /* background-color: #ff4; */
   }
 `;
 
