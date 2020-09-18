@@ -70,11 +70,11 @@ export const PriceContainer = styled.div`
   small {
     color: #989898;
     text-align: left;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 22px;
 
     p {
-      margin-left: 3;
+      margin-left: 5;
       display: inline;
       text-decoration: line-through;
     }
