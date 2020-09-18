@@ -16,11 +16,8 @@ export const Container = styled.div`
   /* margin-left: ${({ index }) => (index % 2 === 0 ? '10' : '0')}px; */
   justify-content: space-between;
   font-family: 'SFPro';
-  overflow: hidden;
 
-  text-overflow: ellipsis;
-
-  > strong {
+  > div {
     color: #393939;
     font-family: 'SFProLight';
     line-height: 22px;
@@ -28,6 +25,10 @@ export const Container = styled.div`
     padding: 0 5px;
     margin: 10px 0;
     height: 70px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     /* background-color: #ff4; */
   }
 `;
