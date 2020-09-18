@@ -17,7 +17,6 @@ export const Container = styled.div`
   justify-content: space-between;
   font-family: 'SFPro';
   overflow: hidden;
-  white-space: nowrap;
 
   text-overflow: ellipsis;
 
