@@ -24,7 +24,7 @@ export const Container = styled.div`
     padding: 0 10px;
     margin: 10px 0;
     height: 70px;
-    /* background-color: #ff4; */
+    background-color: #ff4;
   }
 `;
 
@@ -48,7 +48,7 @@ export const PriceContainer = styled.div`
   width: 100%;
   padding: 0 10px;
 
-  /* background-color: #404; */
+  background-color: #404;
 
   span {
     display: flex;
@@ -76,7 +76,7 @@ export const Options = styled.div`
   display: flex;
   height: 55px;
   width: 100%;
-  /* background-color: #4f4; */
+  background-color: #4f4;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
