@@ -18,7 +18,7 @@ export const Container = styled.div`
   font-family: 'SFPro';
 
   div {
-    .content {
+    &.content {
       color: #393939;
       font-family: 'SFProLight';
       line-height: 22px;
