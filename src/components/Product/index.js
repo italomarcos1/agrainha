@@ -34,23 +34,9 @@ export default function Product({ product }) {
         </span>
         <small>
           antes
-          <p
-            style={{
-              marginLeft: 3,
-              display: 'inline',
-              textDecoration: 'line-through',
-            }}
-          >
-            €{product.oldPrice}
-          </p>
+          <p>€{product.oldPrice}</p>
         </small>
-        <strong
-          style={{
-            fontFamily: 'SFProSemibold',
-          }}
-        >
-          €{product.newPrice}
-        </strong>
+        <strong>€{product.newPrice}</strong>
       </PriceContainer>
       <Options>
         <div>

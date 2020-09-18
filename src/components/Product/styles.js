@@ -70,6 +70,12 @@ export const PriceContainer = styled.div`
     text-align: left;
     font-size: 10px;
     line-height: 22px;
+
+    p {
+      margin-left: 3;
+      display: inline;
+      text-decoration: line-through;
+    }
   }
 
   > strong {
@@ -77,6 +83,7 @@ export const PriceContainer = styled.div`
     text-align: left;
     font-size: 20px;
     line-height: 22px;
+    font-family: 'SFProSemiBold';
   }
 `;
 
