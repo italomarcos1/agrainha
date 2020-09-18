@@ -79,7 +79,7 @@ export const Options = styled.div`
   background-color: #4f4;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
+  padding-left: 2px;
   padding-right: 5px;
   margin-top: 10px;
 
@@ -87,7 +87,7 @@ export const Options = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 62.5%;
+    width: 63%;
 
     strong {
       font-size: 18px;
@@ -111,7 +111,7 @@ export const Options = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28.12%;
+    width: 35%;
     height: 100%;
 
     /* width: 45px; */
