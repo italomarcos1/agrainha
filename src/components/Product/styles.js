@@ -119,7 +119,7 @@ export const Options = styled.div`
       /* width: 41.8%; */
       /* height: 35px; */
       flex: 1;
-      padding: 15px;
+      padding: 10px;
       /* height: 100%; */
       background-color: #f2f2f2;
       border-radius: 50%;
