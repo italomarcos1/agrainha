@@ -56,7 +56,7 @@ export const PriceContainer = styled.div`
     color: #e2a63b;
     font-size: 8px;
     align-items: center;
-
+    background-color: #4f4;
     strong {
       font-size: 8px;
     }
