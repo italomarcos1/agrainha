@@ -62,6 +62,8 @@ export const PriceContainer = styled.div`
 
     strong {
       font-size: 8px;
+      font-family: 'SFProSemibold';
+      margin-right: 3px;
     }
   }
 
