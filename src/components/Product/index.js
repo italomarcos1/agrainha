@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import coins from '~/assets/coins.svg';
 import basket_active from '~/assets/icons/basket_active.svg';
-import minus from '~/assets/minus.svg';
-import plus from '~/assets/plus.svg';
+import minus from '~/assets/icons/minus.svg';
+import plus from '~/assets/icons/plus.svg';
+import heartOn from '~/assets/icons/heart-on.svg';
+import heartOff from '~/assets/icons/heart-off.svg';
 
 import {
   Container,
@@ -12,11 +14,18 @@ import {
   PriceContainer,
   Options,
   Separator,
+  FavoriteButton,
 } from './styles';
 
 export default function Product({ product }) {
+  const [isFavorite, setIsFavorite] = useState(product.isFavorite);
+  const [amount, setAmount] = useState(0);
+
   return (
     <Container>
+      <FavoriteButton type="button" onClick={() => setIsFavorite(!isFavorite)}>
+        <img src={isFavorite ? heartOn : heartOff} alt="Favorite" />
+      </FavoriteButton>
       <ImageContainer>
         <img src={product.picture} alt="Product" />
       </ImageContainer>
@@ -40,11 +49,15 @@ export default function Product({ product }) {
       <Separator />
       <Options>
         <div>
-          <button type="button">
+          <button
+            type="button"
+            disabled={amount === 0}
+            onClick={() => setAmount(amount - 1)}
+          >
             <img src={minus} alt="icon" />
           </button>
-          <strong>1</strong>
-          <button type="button">
+          <strong>{amount}</strong>
+          <button type="button" onClick={() => setAmount(amount + 1)}>
             <img src={plus} alt="icon" />
           </button>
         </div>
@@ -62,5 +75,6 @@ Product.propTypes = {
     picture: PropTypes.string,
     oldPrice: PropTypes.string,
     newPrice: PropTypes.string,
+    isFavorite: PropTypes.bool,
   }).isRequired,
 };

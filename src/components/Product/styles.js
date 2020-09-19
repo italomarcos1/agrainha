@@ -10,7 +10,7 @@ export const Container = styled.div`
   margin-bottom: 20px;
   justify-content: space-between;
   font-family: 'SFPro';
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0.1px 0.1px 4px rgba(0, 0, 0, 0.4);
 
   div {
     &.content {
@@ -31,11 +31,14 @@ export const Container = styled.div`
   }
 `;
 
-export const Separator = styled.hr`
-  width: 90%;
-  height: 1px;
-  color: #ddd;
-  margin: 15px auto 0;
+export const FavoriteButton = styled.button`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  margin: 10px 0px 0px 5px;
+  background: none;
 `;
 
 export const ImageContainer = styled.div`
@@ -49,6 +52,13 @@ export const ImageContainer = styled.div`
   img {
     width: 93.75%;
   }
+`;
+
+export const Separator = styled.hr`
+  width: 90%;
+  height: 1px;
+  color: #ddd;
+  margin: 15px auto 0;
 `;
 
 export const PriceContainer = styled.div`
