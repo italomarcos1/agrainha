@@ -7,7 +7,8 @@ export const Container = styled.div`
   border-radius: 12px;
   padding: 10px 5px;
   width: 29%;
-  margin-right: ${({ index }) => (index % 3 === 0 ? 0 : 10)}px;
+  margin-right: ${({ index }) => (index % 2 === 0 ? 10 : 0)}px;
+  margin-left: ${({ index }) => (index % 2 === 0 ? 10 : 0)}px;
   height: 100px;
   position: relative;
 `;
