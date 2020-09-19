@@ -21,7 +21,7 @@ export default function Home() {
 
   useEffect(() => {
     const productsGridRows = Math.ceil(data.length / 2);
-    const productsGridHeight = productsGridRows * 390;
+    const productsGridHeight = productsGridRows * 415;
 
     const categoriesRows = Math.ceil(categories.length / 2);
     const categoriesGridHeight = categoriesRows * 100;

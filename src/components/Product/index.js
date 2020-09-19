@@ -6,7 +6,13 @@ import basket_active from '~/assets/icons/basket_active.svg';
 import minus from '~/assets/minus.svg';
 import plus from '~/assets/plus.svg';
 
-import { Container, ImageContainer, PriceContainer, Options } from './styles';
+import {
+  Container,
+  ImageContainer,
+  PriceContainer,
+  Options,
+  Separator,
+} from './styles';
 
 export default function Product({ product }) {
   return (
@@ -31,6 +37,7 @@ export default function Product({ product }) {
         </small>
         <strong>€{product.newPrice}</strong>
       </PriceContainer>
+      <Separator />
       <Options>
         <div>
           <button type="button">

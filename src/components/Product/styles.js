@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 45.82%;
-  height: 370px;
+  height: 395px;
   background-color: #fff;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -17,9 +17,10 @@ export const Container = styled.div`
       font-family: 'SFProLight';
       line-height: 22px;
       font-size: 15px;
-      padding: 0 5px;
+      padding: 0 5px 0 10px;
       margin: 10px 0;
-      height: 70px;
+      margin-bottom: 0px;
+      height: 80px;
       width: 100%;
 
       overflow: hidden;
@@ -27,6 +28,13 @@ export const Container = styled.div`
       /* background-color: #ff4; */
     }
   }
+`;
+
+export const Separator = styled.hr`
+  width: 90%;
+  height: 1px;
+  color: #ddd;
+  margin: 15px auto 0;
 `;
 
 export const ImageContainer = styled.div`
@@ -45,10 +53,11 @@ export const ImageContainer = styled.div`
 export const PriceContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 65px;
+  height: 70px;
   width: 100%;
-  padding: 0 5px;
+  padding: 0 10px;
   font-family: 'SFPro';
+  margin-top: 10px;
 
   /* background-color: #404; */
 
@@ -73,6 +82,7 @@ export const PriceContainer = styled.div`
     text-align: left;
     font-size: 12px;
     line-height: 22px;
+    margin: 4px 0;
 
     p {
       margin-left: 5;
