@@ -89,3 +89,56 @@ export default [
     newPrice: '1.900.80',
   },
 ];
+
+export const categories = [
+  {
+    id: 1,
+    name: 'Frutas',
+    image: maça,
+  },
+  {
+    id: 2,
+    name: 'Horta e Couves',
+    image: abobora,
+  },
+  {
+    id: 3,
+    name: 'Pão e Ovos',
+    image: pao,
+  },
+  {
+    id: 4,
+    name: 'Sumos e Néctares',
+    image: suco,
+  },
+  {
+    id: 5,
+    name: 'Vinhos',
+    image: vinho,
+  },
+  {
+    id: 6,
+    name: 'Águas',
+    image: agua1l,
+  },
+  {
+    id: 7,
+    name: 'Leite e Derivados',
+    image: nata,
+  },
+  {
+    id: 8,
+    name: 'Mercearia',
+    image: azeite,
+  },
+  {
+    id: 9,
+    name: 'Leguminosas',
+    image: graos,
+  },
+  {
+    id: 10,
+    name: 'Produtos de Higiene Pessoal',
+    image: pacote,
+  },
+];
