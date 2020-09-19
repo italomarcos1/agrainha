@@ -7,7 +7,7 @@ export default function Category({ category }) {
   return (
     <Container index={category.id}>
       <Image src={category.image} />
-      {/* <DarkLayer /> */}
+      <DarkLayer />
       <Name>{category.name}</Name>
     </Container>
   );
