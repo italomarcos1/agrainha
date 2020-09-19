@@ -10,6 +10,7 @@ export const Container = styled.div`
   margin-bottom: 20px;
   justify-content: space-between;
   font-family: 'SFPro';
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 
   div {
     &.content {
