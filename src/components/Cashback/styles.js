@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  height: 51px;
+  height: 55px;
   background-color: #f5b027;
-  padding: 10px 6px;
+  padding: 6px 10px;
   text-align: center;
   font-family: 'SFPro';
   font-size: 15px;

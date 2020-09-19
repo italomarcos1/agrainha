@@ -7,5 +7,8 @@ export const Content = styled.strong`
   line-height: 22px;
   letter-spacing: 0px;
   color: #000000;
-  margin: 21px auto;
+  margin: 21px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;

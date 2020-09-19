@@ -8,4 +8,5 @@ export const Container = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   padding: 20px;
+  padding-top: 0px;
 `;

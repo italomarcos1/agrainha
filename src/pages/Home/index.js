@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Product from '~/components/Product';
 import Category from '~/components/Category';
@@ -16,6 +16,20 @@ import data, { categories } from '~/data';
 import { Container } from './styles';
 
 export default function Home() {
+  const [gridHeight, setGridHeight] = useState(700);
+  const [categoriesHeight, setCategoriesHeight] = useState(700);
+
+  useEffect(() => {
+    const productsGridRows = Math.ceil(data.length / 2);
+    const productsGridHeight = productsGridRows * 390;
+
+    const categoriesRows = Math.ceil(categories.length / 2);
+    const categoriesGridHeight = categoriesRows * 100;
+
+    setGridHeight(productsGridHeight);
+    setCategoriesHeight(categoriesGridHeight);
+  }, []);
+
   return (
     <Container>
       <Cashback />
@@ -36,13 +50,13 @@ export default function Home() {
         style={{ width: '100%', marginTop: 11 }}
       />
       <Title>Conservas, Salsichas e Legumes</Title>
-      <Grid>
+      <Grid height={gridHeight}>
         {data.map(p => (
           <Product key={p.id} product={p} />
         ))}
       </Grid>
       <Title>Categorias Agrainha</Title>
-      <Grid style={{ marginTop: 1500 }}>
+      <Grid height={categoriesHeight}>
         {categories.map(c => (
           <Category key={c.id} category={c} />
         ))}
