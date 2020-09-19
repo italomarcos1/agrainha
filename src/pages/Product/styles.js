@@ -25,6 +25,32 @@ export const BreadCrumb = styled.div`
   opacity: 1;
 `;
 
+export const ProductInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  padding: 0 16px;
+`;
+
+export const ProductTitle = styled.strong`
+  text-align: left;
+  font-family: 'SFProBold';
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin: 12px 0;
+  color: #000000;
+`;
+
+export const ProductShipping = styled.strong`
+  text-align: left;
+  font-family: 'SFPro';
+  font-size: 15px;
+  line-height: 2px;
+  letter-spacing: 0px;
+`;
+
 export const ProductPicture = styled.img`
   width: 100%;
 `;

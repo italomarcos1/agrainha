@@ -11,7 +11,13 @@ import BackIcon from '~/assets/icons/chevron-left.svg';
 
 import data from '~/data';
 
-import { Container, BreadCrumb } from './styles';
+import {
+  Container,
+  BreadCrumb,
+  ProductInfo,
+  ProductTitle,
+  ProductShipping,
+} from './styles';
 
 export default function Product({ match }) {
   const {
@@ -42,6 +48,21 @@ export default function Product({ match }) {
         Congelados
       </BreadCrumb>
       <img src={product.picture} alt="Product" width="100%" />
+      <ProductInfo>
+        <ProductTitle>{product.title}</ProductTitle>
+        <ProductShipping>
+          Envio: <p style={{ color: '#A4B91D' }}>€4,00</p>
+        </ProductShipping>
+      </ProductInfo>
+      <ProductShipping
+        style={{
+          color: '#F5B027',
+          marginVertical: 32,
+        }}
+      >
+        Envio gratuito para compras acima de €30,00
+      </ProductShipping>
+
       <Title>Mais Produtos Agrainha</Title>
       <Grid height={gridHeight}>
         {data.map((p, productIndex) => (
