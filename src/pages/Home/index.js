@@ -51,8 +51,8 @@ export default function Home() {
       />
       <Title>Conservas, Salsichas e Legumes</Title>
       <Grid height={gridHeight}>
-        {data.map(p => (
-          <Product key={p.id} product={p} />
+        {data.map((p, index) => (
+          <Product key={p.id} index={index} product={p} />
         ))}
       </Grid>
       <Title>Categorias Agrainha</Title>

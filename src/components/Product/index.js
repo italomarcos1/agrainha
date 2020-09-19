@@ -17,19 +17,21 @@ import {
   FavoriteButton,
 } from './styles';
 
-export default function Product({ product }) {
+export default function Product({ product, index }) {
   const [isFavorite, setIsFavorite] = useState(product.isFavorite);
   const [amount, setAmount] = useState(0);
 
+  const { title, picture, oldPrice, newPrice } = product;
+
   return (
-    <Container>
+    <Container to={`/product/${index}`}>
       <FavoriteButton type="button" onClick={() => setIsFavorite(!isFavorite)}>
         <img src={isFavorite ? heartOn : heartOff} alt="Favorite" />
       </FavoriteButton>
       <ImageContainer>
-        <img src={product.picture} alt="Product" />
+        <img src={picture} alt="Product" />
       </ImageContainer>
-      <div className="content">{product.title}</div>
+      <div className="content">{title}</div>
       <PriceContainer>
         <span>
           <img
@@ -42,9 +44,9 @@ export default function Product({ product }) {
         </span>
         <small>
           antes
-          <p>€{product.oldPrice}</p>
+          <p>€{oldPrice}</p>
         </small>
-        <strong>€{product.newPrice}</strong>
+        <strong>€{newPrice}</strong>
       </PriceContainer>
       <Separator />
       <Options>
@@ -77,4 +79,5 @@ Product.propTypes = {
     newPrice: PropTypes.string,
     isFavorite: PropTypes.bool,
   }).isRequired,
+  index: PropTypes.number.isRequired,
 };
