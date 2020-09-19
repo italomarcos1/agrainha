@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -32,6 +32,7 @@ export default function Product({ match }) {
     params: { index },
   } = match;
 
+  const ref = useRef();
   const product = data[index];
   const [gridHeight, setGridHeight] = useState(700);
 
@@ -39,7 +40,8 @@ export default function Product({ match }) {
   const [amount, setAmount] = useState(0);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
+    ref.current.scrollTo(0, 0);
     const productsGridRows = Math.ceil(data.length / 2);
     const productsGridHeight = productsGridRows * 415;
 
@@ -47,7 +49,7 @@ export default function Product({ match }) {
   }, []);
 
   return (
-    <Container>
+    <Container ref={ref}>
       <Cashback />
       <BreadCrumb>
         <Link to="/">
