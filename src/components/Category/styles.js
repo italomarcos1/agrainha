@@ -22,7 +22,7 @@ export const Image = styled.img`
 export const DarkLayer = styled.div`
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 33%;
   border-radius: 10px;
   height: 100px;
 `;
