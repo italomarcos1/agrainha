@@ -57,8 +57,8 @@ export default function Home() {
       </Grid>
       <Title>Categorias Agrainha</Title>
       <Grid height={categoriesHeight}>
-        {categories.map(c => (
-          <Category key={c.id} category={c} />
+        {categories.map((c, index) => (
+          <Category key={c.id} index={index} category={c} />
         ))}
       </Grid>
     </Container>
