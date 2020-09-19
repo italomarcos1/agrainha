@@ -41,7 +41,7 @@ export default function Product({ match }) {
 
   useEffect(() => {
     // window.scrollTo(0, 0);
-    ref.current.scrollTo(0, 0);
+    ref.current.scrollTo(-1000, 0);
     const productsGridRows = Math.ceil(data.length / 2);
     const productsGridHeight = productsGridRows * 415;
 
