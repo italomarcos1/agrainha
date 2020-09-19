@@ -17,7 +17,7 @@ export const Container = styled.div`
       font-family: 'SFProLight';
       line-height: 22px;
       font-size: 15px;
-      padding: 0;
+      padding: 0 5px;
       margin: 10px 0;
       height: 70px;
       width: 100%;
@@ -97,33 +97,31 @@ export const Options = styled.div`
   /* background-color: #4f4; */
   align-items: center;
   justify-content: space-between;
-  padding-left: 2px;
-  padding-right: 5px;
+  padding: 5px;
   margin-top: 10px;
 
   div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 63%;
+    width: 60%;
+    height: 100%;
+    /* margin-right: 12px; */
 
     strong {
       font-size: 18px;
       color: #393939;
-      margin: 0 5px;
+      margin: 0 10px;
     }
 
     button {
       display: flex;
       align-items: center;
       justify-content: center;
-      /* width: 41.8%; */
-      /* height: 35px; */
       flex: 1;
       padding: 10px;
-      /* height: 100%; */
+      height: 100%;
       background-color: #f2f2f2;
-      border-radius: 50%;
     }
   }
 
@@ -131,8 +129,8 @@ export const Options = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35%;
-    height: 93%;
+    width: 30%;
+    height: 100%;
 
     /* width: 45px; */
     /* height: 45px; */
