@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding: 10px 5px;
   width: 33%;
   height: 100px;
+  position: relative;
 `;
 
 export const Image = styled.img`
@@ -17,12 +18,14 @@ export const Image = styled.img`
   width: 100%;
   border-radius: 10px;
   height: 100px;
+  position: relative;
 `;
 
 export const DarkLayer = styled.div`
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 33%;
+  /* width: 33%; */
+  width: 100%;
   border-radius: 10px;
   height: 100px;
 `;
