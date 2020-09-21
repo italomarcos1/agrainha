@@ -129,7 +129,7 @@ export const FavoriteButton = styled.button`
   justify-content: center;
   width: 10%;
   margin: 20px 20px 0px 0px;
-  left: 87.5%;
+  left: 80%;
   background: none;
 `;
 
