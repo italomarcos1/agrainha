@@ -50,7 +50,7 @@ export const ProductInfo = styled.div`
   height: 70px;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 80%;
 `;
 
 export const Price = styled.strong`
