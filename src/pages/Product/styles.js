@@ -130,7 +130,7 @@ export const Options = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  margin-top: 47px;
+  margin-top: 37px;
 
   div {
     display: flex;
@@ -151,11 +151,12 @@ export const Options = styled.div`
       align-items: center;
       justify-content: center;
       width: 25%;
-      padding: 10px;
+      /* padding: 10px; */
       height: 100%;
       background-color: #f2f2f2;
 
       img {
+        background-color: #00f0f2;
         width: 100%;
       }
     }
