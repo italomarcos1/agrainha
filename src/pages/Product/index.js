@@ -12,6 +12,8 @@ import coins from '~/assets/coins.svg';
 import minus from '~/assets/icons/minus.svg';
 import plus from '~/assets/icons/plus.svg';
 import basket_active from '~/assets/icons/basket_active.svg';
+import heartOn from '~/assets/icons/heart-on.svg';
+import heartOff from '~/assets/icons/heart-off.svg';
 
 import data from '~/data';
 
@@ -32,6 +34,8 @@ export default function Product({ match }) {
   } = match;
 
   const product = data[index];
+
+  const [isFavorite, setIsFavorite] = useState(product.isFavorite);
   const [gridHeight, setGridHeight] = useState(700);
 
   // const [isFavorite, setIsFavorite] = useState(product.isFavorite);
@@ -60,6 +64,12 @@ export default function Product({ match }) {
           </Link>
           Congelados
         </BreadCrumb>
+        <FavoriteButton
+          type="button"
+          onClick={() => setIsFavorite(!isFavorite)}
+        >
+          <img src={isFavorite ? heartOn : heartOff} alt="Favorite" />
+        </FavoriteButton>
         <img src={product.picture} alt="Product" width="100%" />
         <ProductInfo>
           <ProductTitle>{product.title}</ProductTitle>
