@@ -27,6 +27,8 @@ import {
   Options,
   PriceContainer,
   FavoriteButton,
+  Amount,
+  Details,
 } from './styles';
 
 export default function Product({ match }) {
@@ -91,7 +93,13 @@ export default function Product({ match }) {
           pretende ajudar nosso planeta, envie pelos nossos motoristas todo o
           plástico que não precisa que nós lhe damos-lhe outra vida :)`}
           </ProductDescription>
-
+          <Amount>Quantidade</Amount>
+          <select name="amount" id="amount" style={{ height: 42 }}>
+            <option value="1">{`1 ${product.title}`}</option>
+            <option value="2">{`2 ${product.title}`}</option>
+            <option value="3">{`3 ${product.title}`}</option>
+            <option value="4">{`4 ${product.title}`}</option>
+          </select>
           <PriceContainer>
             <div>
               <strong>&euro;{product.newPrice}</strong>
@@ -129,6 +137,23 @@ export default function Product({ match }) {
               Adicionar ao cesto
             </button>
           </Options>
+
+          <Details
+            onClick={() => {}}
+            style={{
+              borderBottomColor: '#999',
+              borderBottomWidth: 0.1,
+              marginTop: 38,
+            }}
+          >
+            Descrição do Produto
+          </Details>
+          <Details
+            onClick={() => {}}
+            style={{ borderTopColor: '#999', borderTopWidth: 0.1 }}
+          >
+            Informação Técnica
+          </Details>
         </ProductInfo>
 
         <Title>Mais Produtos Agrainha</Title>

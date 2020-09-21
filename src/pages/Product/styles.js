@@ -133,6 +133,16 @@ export const FavoriteButton = styled.button`
   background: none;
 `;
 
+export const Amount = styled.strong`
+  text-align: left;
+  font-family: 'SFProBold';
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #393939;
+  margin: 25px 0 7px;
+`;
+
 export const Options = styled.div`
   display: flex;
   height: 55px;
@@ -141,7 +151,7 @@ export const Options = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  margin-top: 37px;
+  margin-top: 57px;
 
   div {
     display: flex;
@@ -161,17 +171,18 @@ export const Options = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
       width: 25%;
       /* padding: 10px; */
-      padding: 0;
       padding-left: 0;
+      /* padding-right: 0; */
+      /* padding: 0; */
       height: 100%;
       background-color: #f2f2f2;
 
       img {
-        background-color: #00f0f2;
-        width: 45%;
-        align-self: center;
+        width: 35%;
+        margin: 0 auto;
       }
     }
   }
@@ -197,4 +208,18 @@ export const Options = styled.div`
       width: 20%;
     }
   }
+`;
+
+export const Details = styled.button.attrs({
+  type: 'button',
+})`
+  width: 100%;
+  height: 43px;
+  background-color: #f7f9ec;
+  padding: 12px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #494949;
+  border-bottom: 1px solid #494949;
 `;
