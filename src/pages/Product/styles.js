@@ -171,7 +171,7 @@ export const Options = styled.div`
     line-height: 22px;
     letter-spacing: 0px;
     color: #fff;
-    padding: 12px 18px;
+    padding-left: 18px;
 
     img {
       margin-right: 7px;
