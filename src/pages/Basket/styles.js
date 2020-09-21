@@ -125,7 +125,7 @@ export const DeleteItem = styled.button`
   justify-content: center;
 
   img {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
 `;
