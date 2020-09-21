@@ -101,7 +101,7 @@ export const Options = styled.div`
       align-items: center;
       justify-content: center;
       text-align: center;
-      width: 25%;
+      width: 35%;
       padding-left: 0;
       height: 100%;
       background-color: #f2f2f2;
@@ -118,7 +118,7 @@ export const DeleteItem = styled.button`
   background: #f84c4c;
   border-radius: 4px;
   opacity: 1;
-  width: 13%;
+  width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
