@@ -128,7 +128,7 @@ export const FavoriteButton = styled.button`
   align-items: center;
   justify-content: center;
   width: 10%;
-  margin: 20px 20px 0px 0px;
+  margin: 10px 20px 0px 0px;
   left: 80%;
   background: none;
 `;
@@ -173,10 +173,7 @@ export const Options = styled.div`
       justify-content: center;
       text-align: center;
       width: 25%;
-      /* padding: 10px; */
       padding-left: 0;
-      /* padding-right: 0; */
-      /* padding: 0; */
       height: 100%;
       background-color: #f2f2f2;
 
