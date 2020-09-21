@@ -11,6 +11,7 @@ export const Container = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 `;
 
 export const Item = styled(Link)`
