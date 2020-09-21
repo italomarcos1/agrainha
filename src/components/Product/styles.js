@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Container = styled(Link)`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 45.82%;
@@ -12,24 +12,22 @@ export const Container = styled(Link)`
   justify-content: space-between;
   font-family: 'SFPro';
   box-shadow: 0.1px 0.1px 4px rgba(0, 0, 0, 0.4);
+`;
 
-  div {
-    &.content {
-      color: #393939;
-      font-family: 'SFProLight';
-      line-height: 22px;
-      font-size: 15px;
-      padding: 0 5px 0 10px;
-      margin: 10px 0;
-      margin-bottom: 0px;
-      height: 80px;
-      width: 100%;
+export const Title = styled(Link)`
+  color: #393939;
+  font-family: 'SFProLight';
+  line-height: 22px;
+  font-size: 15px;
+  padding: 0 5px 0 10px;
+  margin: 10px 0;
+  margin-bottom: 0px;
+  height: 80px;
+  width: 100%;
 
-      overflow: hidden;
-      text-overflow: ellipsis;
-      /* background-color: #ff4; */
-    }
-  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* background-color: #ff4; */
 `;
 
 export const FavoriteButton = styled.button`
@@ -42,7 +40,7 @@ export const FavoriteButton = styled.button`
   background: none;
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +60,7 @@ export const Separator = styled.hr`
   margin: 15px auto 0;
 `;
 
-export const PriceContainer = styled.div`
+export const PriceContainer = styled(Link)`
   display: flex;
   flex-direction: column;
   height: 70px;

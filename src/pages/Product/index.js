@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -32,7 +32,6 @@ export default function Product({ match }) {
     params: { index },
   } = match;
 
-  const ref = useRef();
   const product = data[index];
   const [gridHeight, setGridHeight] = useState(700);
 
@@ -49,7 +48,7 @@ export default function Product({ match }) {
   }, []);
 
   return (
-    <Container ref={ref}>
+    <Container>
       <Cashback />
       <BreadCrumb>
         <Link to="/">

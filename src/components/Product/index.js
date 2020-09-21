@@ -15,6 +15,7 @@ import {
   Options,
   Separator,
   FavoriteButton,
+  Title,
 } from './styles';
 
 export default function Product({ product, index }) {
@@ -24,15 +25,15 @@ export default function Product({ product, index }) {
   const { title, picture, oldPrice, newPrice } = product;
 
   return (
-    <Container to={`/product/${index}`}>
+    <Container>
       <FavoriteButton type="button" onClick={() => setIsFavorite(!isFavorite)}>
         <img src={isFavorite ? heartOn : heartOff} alt="Favorite" />
       </FavoriteButton>
-      <ImageContainer>
+      <ImageContainer to={`/product/${index}`}>
         <img src={picture} alt="Product" />
       </ImageContainer>
-      <div className="content">{title}</div>
-      <PriceContainer>
+      <Title to={`/product/${index}`}>{title}</Title>
+      <PriceContainer to={`/product/${index}`}>
         <span>
           <img
             src={coins}
