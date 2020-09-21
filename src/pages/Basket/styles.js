@@ -30,7 +30,8 @@ export const Item = styled.li`
 `;
 
 export const ItemPicture = styled.img`
-  width: 20%;
+  width: 70px;
+  height: 70px;
 `;
 
 export const Title = styled.h1`
