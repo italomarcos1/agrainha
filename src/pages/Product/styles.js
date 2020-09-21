@@ -166,8 +166,8 @@ export const Options = styled.div`
     background-color: #a4b91d;
     border-radius: 4px;
     text-align: left;
-    font-family: 15px/22px 'SFPro';
-    font-size: 15px;
+    font-family: 'SFPro';
+    font-size: 13px;
     line-height: 22px;
     letter-spacing: 0px;
     color: #fff;
