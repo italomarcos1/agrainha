@@ -154,6 +154,10 @@ export const Options = styled.div`
       padding: 10px;
       height: 100%;
       background-color: #f2f2f2;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
