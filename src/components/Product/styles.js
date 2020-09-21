@@ -5,13 +5,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 45.82%;
-  height: 395px;
+  height: 390px;
   background-color: #fff;
   border-radius: 4px;
   margin-bottom: 20px;
   justify-content: space-between;
   font-family: 'SFPro';
-  box-shadow: 0.1px 0.1px 4px rgba(0, 0, 0, 0.4);
 `;
 
 export const Title = styled(Link)`
@@ -22,7 +21,7 @@ export const Title = styled(Link)`
   padding: 0 5px 0 10px;
   margin: 10px 0;
   margin-bottom: 0px;
-  height: 80px;
+  height: 76px;
   width: 100%;
 
   overflow: hidden;
@@ -49,15 +48,8 @@ export const ImageContainer = styled(Link)`
   width: 100%;
 
   img {
-    width: 93.75%;
+    width: 100%;
   }
-`;
-
-export const Separator = styled.hr`
-  width: 90%;
-  height: 1px;
-  color: #ddd;
-  margin: 15px auto 0;
 `;
 
 export const PriceContainer = styled(Link)`

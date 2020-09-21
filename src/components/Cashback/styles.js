@@ -12,4 +12,5 @@ export const Container = styled.div`
   letter-spacing: 0px;
   color: #393939;
   text-transform: uppercase;
+  /* margin-top: 51px; */
 `;

@@ -13,32 +13,38 @@ import { Container, SearchBar } from './styles';
 
 export default function Search() {
   return (
-    <Container>
-      <SearchBar>
-        <div>
-          <input type="text" placeholder="O que procura hoje?" />
-          <button type="button" onClick={() => {}}>
-            <img src={search} alt="search" />
-          </button>
-        </div>
-      </SearchBar>
-      <Cashback />
-      <img src={mainBanner} alt="Banner Principal" style={{ width: '100%' }} />
-      <img
-        src={acp}
-        alt="Banner ACP"
-        style={{ width: '100%', marginTop: 11 }}
-      />
-      <img
-        src={parceiro1}
-        alt="Banner Parceiro 1"
-        style={{ width: '100%', marginTop: 11 }}
-      />
-      <img
-        src={parceiro2}
-        alt="Banner Parceiro 2"
-        style={{ width: '100%', marginTop: 11 }}
-      />
-    </Container>
+    <>
+      <Container>
+        <SearchBar>
+          <div>
+            <input type="text" placeholder="O que procura hoje?" />
+            <button type="button" onClick={() => {}}>
+              <img src={search} alt="search" />
+            </button>
+          </div>
+        </SearchBar>
+        <Cashback />
+        <img
+          src={mainBanner}
+          alt="Banner Principal"
+          style={{ width: '100%' }}
+        />
+        <img
+          src={acp}
+          alt="Banner ACP"
+          style={{ width: '100%', marginTop: 11 }}
+        />
+        <img
+          src={parceiro1}
+          alt="Banner Parceiro 1"
+          style={{ width: '100%', marginTop: 11 }}
+        />
+        <img
+          src={parceiro2}
+          alt="Banner Parceiro 2"
+          style={{ width: '100%', marginTop: 11 }}
+        />
+      </Container>
+    </>
   );
 }

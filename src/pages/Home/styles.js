@@ -5,4 +5,5 @@ export const Container = styled.div`
   height: 100%;
   flex: 1;
   background-color: #f5f5f5;
+  margin-top: 51px;
 `;

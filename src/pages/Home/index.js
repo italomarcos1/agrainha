@@ -31,36 +31,42 @@ export default function Home() {
   }, []);
 
   return (
-    <Container>
-      <Cashback />
-      <img src={mainBanner} alt="Banner Principal" style={{ width: '100%' }} />
-      <img
-        src={acp}
-        alt="Banner ACP"
-        style={{ width: '100%', marginTop: 11 }}
-      />
-      <img
-        src={parceiro1}
-        alt="Banner Parceiro 1"
-        style={{ width: '100%', marginTop: 11 }}
-      />
-      <img
-        src={parceiro2}
-        alt="Banner Parceiro 2"
-        style={{ width: '100%', marginTop: 11 }}
-      />
-      <Title>Conservas, Salsichas e Legumes</Title>
-      <Grid height={gridHeight}>
-        {data.map((p, index) => (
-          <Product key={p.id} index={index} product={p} />
-        ))}
-      </Grid>
-      <Title>Categorias Agrainha</Title>
-      <Grid height={categoriesHeight}>
-        {categories.map((c, index) => (
-          <Category key={c.id} index={index} category={c} />
-        ))}
-      </Grid>
-    </Container>
+    <>
+      <Container>
+        <Cashback />
+        <img
+          src={mainBanner}
+          alt="Banner Principal"
+          style={{ width: '100%' }}
+        />
+        <img
+          src={acp}
+          alt="Banner ACP"
+          style={{ width: '100%', marginTop: 11 }}
+        />
+        <img
+          src={parceiro1}
+          alt="Banner Parceiro 1"
+          style={{ width: '100%', marginTop: 11 }}
+        />
+        <img
+          src={parceiro2}
+          alt="Banner Parceiro 2"
+          style={{ width: '100%', marginTop: 11 }}
+        />
+        <Title>Conservas, Salsichas e Legumes</Title>
+        <Grid height={gridHeight}>
+          {data.map((p, index) => (
+            <Product key={p.id} index={index} product={p} />
+          ))}
+        </Grid>
+        <Title>Categorias Agrainha</Title>
+        <Grid height={categoriesHeight}>
+          {categories.map((c, index) => (
+            <Category key={c.id} index={index} category={c} />
+          ))}
+        </Grid>
+      </Container>
+    </>
   );
 }

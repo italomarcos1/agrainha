@@ -13,7 +13,6 @@ import {
   ImageContainer,
   PriceContainer,
   Options,
-  Separator,
   FavoriteButton,
   Title,
 } from './styles';
@@ -49,7 +48,6 @@ export default function Product({ product, index }) {
         </small>
         <strong>&euro;{newPrice}</strong>
       </PriceContainer>
-      <Separator />
       <Options>
         <div>
           <button

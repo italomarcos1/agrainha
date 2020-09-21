@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 100%;
   flex: 1;
   background-color: #f5f5f5;
+  margin-top: 51px;
 `;
 
 export const BreadCrumb = styled.div`
@@ -62,13 +63,6 @@ export const ProductDescription = styled.div`
   background-color: #f2f2f2;
   border-radius: 4px;
   padding: 7px 9px;
-`;
-
-export const Separator = styled.hr`
-  width: 90%;
-  height: 1px;
-  color: #ddd;
-  margin: 37px auto 0;
 `;
 
 export const PriceContainer = styled.div`
@@ -141,22 +135,22 @@ export const Options = styled.div`
   div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 65%;
+    justify-content: flex-start;
+    width: 50%;
     height: 100%;
-    /* margin-right: 12px; */
+    /* background-color: #404; */
 
     strong {
       font-size: 18px;
       color: #393939;
-      margin: 0 10px;
+      margin: 0 20px;
     }
 
     button {
       display: flex;
       align-items: center;
       justify-content: center;
-      flex: 1;
+      width: 25%;
       padding: 10px;
       height: 100%;
       background-color: #f2f2f2;
@@ -167,12 +161,19 @@ export const Options = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 50%;
     height: 100%;
-
-    /* width: 45px; */
-    /* height: 45px; */
     background-color: #a4b91d;
     border-radius: 4px;
+    text-align: left;
+    font-family: 15px/22px 'SFPro';
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #fff;
+
+    img {
+      margin-right: 7px;
+    }
   }
 `;
