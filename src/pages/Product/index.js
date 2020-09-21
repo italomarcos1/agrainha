@@ -26,6 +26,7 @@ import {
   ProductDescription,
   Options,
   PriceContainer,
+  FavoriteButton,
 } from './styles';
 
 export default function Product({ match }) {
@@ -38,9 +39,7 @@ export default function Product({ match }) {
   const [isFavorite, setIsFavorite] = useState(product.isFavorite);
   const [gridHeight, setGridHeight] = useState(700);
 
-  // const [isFavorite, setIsFavorite] = useState(product.isFavorite);
   const [amount, setAmount] = useState(0);
-  // ref.current.scrollTo(0, 0);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -122,6 +122,17 @@ export const PriceContainer = styled.div`
   }
 `;
 
+export const FavoriteButton = styled.button`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  margin: 20px 20px 0px 0px;
+  left: 87.5%;
+  background: none;
+`;
+
 export const Options = styled.div`
   display: flex;
   height: 55px;
@@ -152,12 +163,15 @@ export const Options = styled.div`
       justify-content: center;
       width: 25%;
       /* padding: 10px; */
+      padding: 0;
+      padding-left: 0;
       height: 100%;
       background-color: #f2f2f2;
 
       img {
         background-color: #00f0f2;
-        width: 100%;
+        width: 45%;
+        align-self: center;
       }
     }
   }
