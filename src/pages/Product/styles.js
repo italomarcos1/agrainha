@@ -15,7 +15,7 @@ export const BreadCrumb = styled.div`
   background-color: #fff;
   height: 41px;
   width: 100%;
-  padding-left: 16px;
+  padding-left: 13px;
 
   text-align: left;
   font-family: 'SFPro';
