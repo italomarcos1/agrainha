@@ -130,7 +130,7 @@ export const Options = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 47px;
 
   div {
     display: flex;
@@ -171,9 +171,11 @@ export const Options = styled.div`
     line-height: 22px;
     letter-spacing: 0px;
     color: #fff;
+    padding: 12px 18px;
 
     img {
       margin-right: 7px;
+      width: 20%;
     }
   }
 `;
