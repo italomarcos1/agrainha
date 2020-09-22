@@ -167,7 +167,7 @@ export const menuCategories = [
       { id: 4, title: 'Destilados' },
     ],
   },
-  { id: 4, title: 'Bioĺógicas', childrenCategories: [] },
+  { id: 4, title: 'Biológicas', childrenCategories: [] },
   { id: 5, title: 'Cabazes', childrenCategories: [] },
   { id: 6, title: 'Charcutaria Alentejana', childrenCategories: [] },
   { id: 7, title: 'Charcutaria e Frescos', childrenCategories: [] },
