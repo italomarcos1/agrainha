@@ -101,9 +101,9 @@ export const Options = styled.div`
       align-items: center;
       justify-content: center;
       text-align: center;
-      width: 35%;
+      width: 45px;
+      height: 45px;
       padding-left: 0;
-      height: 100%;
       background-color: #f2f2f2;
 
       img {
@@ -118,8 +118,8 @@ export const DeleteItem = styled.button`
   background: #f84c4c;
   border-radius: 4px;
   opacity: 1;
-  width: 20%;
-  height: 100%;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
