@@ -8,6 +8,7 @@ export const Container = styled(Form)`
   flex: 1;
   background-color: #fff;
   padding: 17px 15px;
+  margin-bottom: 20px;
 `;
 
 export const Header = styled.div`
