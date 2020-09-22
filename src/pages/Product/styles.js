@@ -6,6 +6,7 @@ export const Container = styled.div`
   flex: 1;
   background-color: #f5f5f5;
   margin-top: 51px;
+  position: relative;
 `;
 
 export const BreadCrumb = styled.div`

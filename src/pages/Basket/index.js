@@ -10,6 +10,8 @@ import {
   Separator,
   Options,
   DeleteItem,
+  Warning,
+  ShippingWarning,
 } from './styles';
 
 import data from '~/data';
@@ -22,6 +24,16 @@ export default function Basket() {
   const [amount, setAmount] = useState(10);
   return (
     <Container>
+      <Warning>
+        O pagamento da encomenda é efectuado no ato da entrega.
+        <br /> A confirmação da sua encomenda será feita através de contacto
+        telefónico pelos nossos colaboradores.
+      </Warning>
+      <ShippingWarning>
+        Levantamento na loja: <b>Grátis</b>
+        <br /> Compras até € 30,00: <b>Entrega € 5,00</b>
+        <br /> Compras acima de € 30,00: <b>Entrega Grátis</b>
+      </ShippingWarning>
       <ItemsList>
         {data.map(p => {
           const { id, picture, title, newPrice } = p;

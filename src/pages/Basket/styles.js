@@ -8,6 +8,35 @@ export const Container = styled.div`
   padding: 13px;
 `;
 
+export const Warning = styled.div`
+  height: 147px;
+  background: #fff;
+  border: 1px solid #f84c4c;
+  border-radius: 6px;
+
+  text-align: left;
+  font-family: 'SFPro';
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #f84c4c;
+`;
+
+export const ShippingWarning = styled.div`
+  background: #e2edfd;
+  border: 1px solid #5b94d6;
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  text-align: left;
+  font-family: 'SFPro';
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #5b94d6;
+`;
+
 export const ItemsList = styled.ul`
   display: flex;
   flex: 1;
