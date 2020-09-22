@@ -19,7 +19,7 @@ export const Input = styled.input`
   text-align: left;
   font-family: 'SFPro';
   font-size: 18px;
-  line-height: 44px;
+  line-height: 18px;
   letter-spacing: 0px;
   color: #707070;
 
