@@ -153,3 +153,66 @@ export const categories = [
     image: pacote,
   },
 ];
+
+export const menuCategories = [
+  { id: 1, title: 'Animais', childrenCategories: [] },
+  { id: 2, title: 'Bebé', childrenCategories: [{ id: 1, title: 'Teste' }] },
+  {
+    id: 3,
+    title: 'Bebidas',
+    childrenCategories: [
+      { id: 1, title: 'Águas' },
+      { id: 2, title: 'Cervejas' },
+      { id: 3, title: 'Chá, Café e Achocolatados' },
+      { id: 4, title: 'Destilados' },
+    ],
+  },
+  { id: 4, title: 'Bioĺógicas', childrenCategories: [] },
+  { id: 5, title: 'Cabazes', childrenCategories: [] },
+  { id: 6, title: 'Charcutaria Alentejana', childrenCategories: [] },
+  { id: 7, title: 'Charcutaria e Frescos', childrenCategories: [] },
+  { id: 8, title: 'Citrinos', childrenCategories: [] },
+  {
+    id: 9,
+    title: 'Congelados',
+    childrenCategories: [{ id: 1, title: 'Teste' }],
+  },
+  { id: 10, title: 'Frutas da Época', childrenCategories: [] },
+  { id: 11, title: 'Frutas', childrenCategories: [] },
+  { id: 12, title: 'Gelados e Sobremesas', childrenCategories: [] },
+  { id: 13, title: 'Gomas e Doces', childrenCategories: [] },
+  {
+    id: 14,
+    title: 'Hortículas',
+    childrenCategories: [
+      { id: 1, title: 'Alfaces' },
+      { id: 2, title: 'Cenouras' },
+    ],
+  },
+  { id: 15, title: 'Leguminosas', childrenCategories: [] },
+  { id: 16, title: 'Leite e Derivados', childrenCategories: [] },
+  {
+    id: 17,
+    title: 'Limpeza',
+    childrenCategories: [
+      { id: 1, title: 'Produtos de Limpeza' },
+      { id: 2, title: 'Desinfetantes' },
+    ],
+  },
+  {
+    id: 18,
+    title: 'Mercearia',
+    childrenCategories: [{ id: 1, title: 'Teste' }],
+  },
+  {
+    id: 19,
+    title: 'Pão e Ovos',
+    childrenCategories: [
+      { id: 1, title: 'Pão Francês' },
+      { id: 1, title: 'Ovos da Granja' },
+    ],
+  },
+  { id: 20, title: 'Produtos de Higiene Pessoal', childrenCategories: [] },
+  { id: 21, title: 'Saúde e Bem Estar', childrenCategories: [] },
+  { id: 22, title: 'Tropicais', childrenCategories: [] },
+];

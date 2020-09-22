@@ -41,7 +41,6 @@ export const Title = styled.h1`
   line-height: 22px;
   letter-spacing: 0px;
   color: #393939;
-  opacity: 1;
 `;
 
 export const ProductInfo = styled.div`
