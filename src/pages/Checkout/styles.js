@@ -103,7 +103,7 @@ export const CheckoutButton = styled(Link)`
   line-height: 22px;
   letter-spacing: 0px;
   color: #fefffe;
-  margin-bottom: 25px;
+  margin-top: 35px;
   position: fixed;
   z-index: 999;
   bottom: 0;
