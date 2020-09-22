@@ -93,6 +93,7 @@ export const Options = styled.div`
       line-height: 22px;
       letter-spacing: 0px;
       text-align: center;
+      margin: 0 11px;
     }
 
     button {
