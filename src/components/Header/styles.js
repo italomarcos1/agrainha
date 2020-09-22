@@ -25,8 +25,8 @@ export const Item = styled(Link)`
 `;
 
 export const Badge = styled.span`
-  top: 16.5%;
-  right: 3%;
+  top: 9px;
+  right: 13px;
   background-color: #4d4f53;
   position: absolute;
   border-radius: 50%;
