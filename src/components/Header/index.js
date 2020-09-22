@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import { Container, Item } from './styles';
+import { Container, Item, Badge } from './styles';
 
 import logo from '~/assets/logo.svg';
 
@@ -41,6 +41,7 @@ function Header() {
           src={pathname === '/basket' ? basket_active : basket}
           alt="basket"
         />
+        <Badge>28</Badge>
       </Item>
     </Container>
   );

@@ -23,3 +23,23 @@ export const Item = styled(Link)`
   justify-content: center;
   background-color: ${({ active }) => (active ? '#A4B91D' : '#fff')};
 `;
+
+export const Badge = styled.span`
+  top: 16.5%;
+  right: 3%;
+  background-color: #4d4f53;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  /* border: 0.5px solid #f0f0f0; */
+  font-family: 'SFProBold';
+  font-size: 10px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #fefffe;
+`;

@@ -128,8 +128,8 @@ export const FavoriteButton = styled.button`
   align-items: center;
   justify-content: center;
   width: 10%;
-  margin: 10px 20px 0px 0px;
-  left: 80%;
+  top: 17.5%;
+  left: 85%;
   background: none;
 `;
 

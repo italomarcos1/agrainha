@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import close from '~/assets/icons/close.svg';
 import chevron_right from '~/assets/icons/chevron-right.svg';
@@ -14,9 +15,9 @@ export default function Menu() {
   return (
     <Container>
       <Header>
-        <button type="button">
+        <Link to="/">
           <img src={close} alt="Close Button" />
-        </button>
+        </Link>
       </Header>
       <SubHeader>Dúvidas? Fale connosco</SubHeader>
       {menuCategories.map(c => (
