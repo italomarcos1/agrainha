@@ -81,7 +81,8 @@ export default function Checkout() {
         <InputMask
           title="NIF"
           name="nif"
-          type="nif"
+          mask="999999999"
+          placeholder="000000000"
           value={nif}
           onChange={({ target: { value } }) => setNif(value)}
         />
