@@ -48,6 +48,7 @@ export const PriceInfo = styled.span`
     font-size: 13px;
     line-height: 22px;
     letter-spacing: 0px;
+    padding-right: 20px;
     color: #393939;
     /* background-color: #f5307b; */
     width: 65%;
