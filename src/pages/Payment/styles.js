@@ -81,11 +81,11 @@ export const PriceInfo = styled.span`
     letter-spacing: 0px;
     color: #393939;
     /* background-color: #f5307b; */
-    width: 70%;
+    width: 65%;
   }
 
   p {
-    width: 30%;
+    width: 35%;
     text-align: right;
     font-family: 'SFPro';
     font-size: 25px;
