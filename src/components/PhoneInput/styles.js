@@ -11,8 +11,21 @@ export const Container = styled.div`
     width: 100%;
     height: 42px;
 
+    select {
+      margin-top: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      background-position-x: 90%;
+      width: 25%;
+      font-family: 'SFPro';
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0px;
+      color: #393939;
+    }
+
     input {
-      width: 70%;
+      width: 75%;
       height: 42px;
       background-color: #fff;
       border: 1px solid #e0e0e0;
