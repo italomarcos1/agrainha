@@ -103,7 +103,7 @@ export default function Delivery() {
         </PriceInfo>
         <PriceInfo>
           <b>TOTAL</b>
-          <p style={{ color: '#12B118', fontFamily: 'SFProSemiBold' }}>
+          <p style={{ color: '#12B118', fontFamily: 'SFProBold' }}>
             &euro; 150,00
           </p>
         </PriceInfo>

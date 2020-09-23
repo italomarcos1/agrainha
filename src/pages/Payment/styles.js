@@ -38,12 +38,12 @@ export const Info = styled.span`
     letter-spacing: 0px;
     color: #393939;
     /* background-color: #f5307b; */
-    width: 32.5%;
+    width: 35%;
     padding-right: 20px;
   }
 
   p {
-    width: 67.5%;
+    width: 65%;
     text-align: left;
     font-family: 'SFPro';
     font-size: 15px;
@@ -69,11 +69,11 @@ export const PriceInfo = styled.span`
     letter-spacing: 0px;
     color: #393939;
     /* background-color: #f5307b; */
-    width: 65%;
+    width: 60%;
   }
 
   p {
-    width: 35%;
+    width: 40%;
     text-align: right;
     font-family: 'SFPro';
     font-size: 25px;
