@@ -53,9 +53,18 @@ export default function Checkout() {
       </SubHeader>
 
       <Container onSubmit={handleSubmit} style={{ height: 720 }}>
-        <Input name="name" title="Nome" style={{ marginTop: 0 }} />
-        <Input name="nickname" title="Apelido" />
-        <Input name="email" title="Email" />
+        <Input
+          name="name"
+          title="Nome"
+          style={{ marginTop: 0 }}
+          placeholder="Informe seu nome"
+        />
+        <Input
+          name="nickname"
+          title="Apelido"
+          placeholder="Informe seu apelido"
+        />
+        <Input name="email" title="Email" placeholder="Informe seu email" />
 
         <PhoneInput
           name="phone"
