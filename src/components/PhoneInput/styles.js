@@ -11,19 +11,6 @@ export const Container = styled.div`
     width: 100%;
     height: 42px;
 
-    select {
-      margin-top: 0;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      background-position-x: 90%;
-      width: 35%;
-      font-family: 'SFPro';
-      font-size: 15px;
-      line-height: 22px;
-      letter-spacing: 0px;
-      color: #393939;
-    }
-
     input {
       width: 65%;
       height: 42px;

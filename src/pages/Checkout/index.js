@@ -3,20 +3,10 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Input from '~/components/Input';
 import PhoneInput from '~/components/PhoneInput';
 import InputMask from '~/components/InputMask';
+import CheckoutHeader from '~/components/CheckoutHeader';
 import RadioButton from '~/components/CustomRadioButton';
 
-import {
-  Container,
-  Header,
-  SubHeader,
-  Line,
-  OptionContainer,
-  OptionTitle,
-  OptionNumber,
-  CheckoutButton,
-} from './styles';
-
-import logo from '~/assets/logo.svg';
+import { Container, CheckoutButton } from './styles';
 
 export default function Checkout() {
   const [wantsNif, setWantsNif] = useState('no');
@@ -33,24 +23,7 @@ export default function Checkout() {
 
   return (
     <>
-      <Header>
-        <img src={logo} alt="Logo" />
-      </Header>
-      <SubHeader>
-        <OptionContainer>
-          <OptionTitle>Informações</OptionTitle>
-          <OptionNumber active>1</OptionNumber>
-        </OptionContainer>
-        <OptionContainer>
-          <OptionTitle>Entrega</OptionTitle>
-          <OptionNumber>2</OptionNumber>
-        </OptionContainer>
-        <OptionContainer>
-          <OptionTitle>Pagamento</OptionTitle>
-          <OptionNumber>3</OptionNumber>
-        </OptionContainer>
-        <Line />
-      </SubHeader>
+      <CheckoutHeader />
 
       <Container onSubmit={handleSubmit} style={{ height: 720 }}>
         <Input
@@ -101,7 +74,7 @@ export default function Checkout() {
           setOption={value => setWantsNif(value)}
         />
       </Container>
-      <CheckoutButton to="/">Continuar</CheckoutButton>
+      <CheckoutButton to="/delivery">Continuar</CheckoutButton>
     </>
   );
 }

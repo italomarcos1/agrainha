@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Select from '~/components/Select';
+import Select from './components/CountryCodeSelect';
 import InputMask from '~/components/InputMask/inputmask';
 
 import { Container, Title } from './styles';
