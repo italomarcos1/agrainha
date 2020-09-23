@@ -24,8 +24,7 @@ export default function Checkout() {
   return (
     <>
       <CheckoutHeader />
-
-      <Container onSubmit={handleSubmit}>
+      <Container onSubmit={handleSubmit} style={{ height: 670 }}>
         <Input
           name="name"
           title="Nome"

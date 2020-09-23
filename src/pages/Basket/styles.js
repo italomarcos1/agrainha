@@ -113,7 +113,7 @@ export const DiscountCoupon = styled.div`
 
   strong {
     text-align: left;
-    font-family: 'SFProBold';
+    font-family: 'SFPro';
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0px;
