@@ -21,19 +21,6 @@ export const Container = styled(Form)`
 
     opacity: 1;
   }
-
-  select {
-    background: #f2f2f2;
-    box-shadow: 0px 2px 0px #00000029;
-    border-radius: 4px;
-
-    text-align: left;
-    font-family: 'SFPro';
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: 0px;
-    color: #393939;
-  }
 `;
 
 export const Info = styled.span`
@@ -51,12 +38,12 @@ export const Info = styled.span`
     letter-spacing: 0px;
     color: #393939;
     /* background-color: #f5307b; */
-    width: 35%;
+    width: 32.5%;
     padding-right: 20px;
   }
 
   p {
-    width: 65%;
+    width: 67.5%;
     text-align: left;
     font-family: 'SFPro';
     font-size: 15px;

@@ -51,11 +51,11 @@ export const PriceInfo = styled.span`
     padding-right: 20px;
     color: #393939;
     /* background-color: #f5307b; */
-    width: 65%;
+    width: 62.5%;
   }
 
   p {
-    width: 35%;
+    width: 37.5%;
     text-align: right;
     font-family: 'SFPro';
     font-size: 25px;
