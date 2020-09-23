@@ -5,7 +5,7 @@ import arrow from '~/assets/icons/arrow-down.svg';
 export const Select = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: transparent;
+  background-color: #f2f2f2;
   margin-top: 7px;
   background-image: url(${arrow});
   background-repeat: no-repeat;
@@ -18,13 +18,15 @@ export const Select = styled.select`
   display: flex;
   padding: 0;
   padding-left: 12px;
+  box-shadow: 0px 2px 0px #00000029;
+  text-align: left;
 
   font-family: 'SFPro';
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 22px;
   letter-spacing: 0px;
 
-  color: #707070;
+  color: #393939;
 `;
 
 export const Container = styled.div`
