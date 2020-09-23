@@ -91,6 +91,7 @@ export const PriceInfo = styled.span`
     font-size: 25px;
     line-height: 22px;
     letter-spacing: 0px;
+    padding-right: 7px;
     /* background-color: #05307b; */
     color: #393939;
     color: ${({ price }) => (price ? '#12B118' : '#393939')};

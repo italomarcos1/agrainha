@@ -26,11 +26,9 @@ export default function CustomInput({
 
   return (
     <Container full={full} style={style}>
-      <div>
-        <Title style={{ fontSize }} error={error}>
-          {title}
-        </Title>
-      </div>
+      <Title style={{ fontSize }} error={error}>
+        {title}
+      </Title>
       <Input
         name={name}
         placeholder="Type here..."

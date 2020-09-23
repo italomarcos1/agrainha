@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  flex: 1;
   width: 100%;
-  height: 100%;
+  flex: 1;
   background-color: #f2f2f2;
   padding: 13px;
+  padding-bottom: 120px;
   margin-top: 51px;
 `;
 
@@ -32,6 +32,38 @@ export const Header = styled.div`
 
   a {
     margin-right: 11px;
+  }
+`;
+
+export const PriceInfo = styled.span`
+  display: flex;
+  width: 100%;
+  height: 30px;
+
+  margin-top: 14px;
+
+  b {
+    text-align: right;
+    font-family: 'SFProBold';
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #393939;
+    /* background-color: #f5307b; */
+    width: 70%;
+  }
+
+  p {
+    width: 30%;
+    text-align: right;
+    font-family: 'SFPro';
+    font-size: 25px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    padding-right: 7px;
+    /* background-color: #05307b; */
+    color: #393939;
+    color: ${({ price }) => (price ? '#12B118' : '#393939')};
   }
 `;
 
@@ -71,6 +103,68 @@ export const ItemsList = styled.ul`
   margin-top: 51px;
   flex-direction: column;
   /* background-color: #f2f202; */
+`;
+
+export const DiscountCoupon = styled.div`
+  width: 100%;
+  height: 67px;
+  margin-top: 26px;
+
+  strong {
+    text-align: left;
+    font-family: 'SFProBold';
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: ${({ error }) => (error ? '#f53030' : '#393939')};
+  }
+
+  div {
+    display: flex;
+
+    input {
+      width: 62%;
+      height: 42px;
+      margin-top: 7px;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-color: ${({ error }) => (error ? '#f53030' : '#e0e0e0')};
+      border-width: ${({ error }) => (error ? 2 : 1)}px;
+      border-radius: 4px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 12px;
+      text-align: left;
+      font-family: 'SFPro';
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0px;
+      color: #707070;
+
+      &::placeholder {
+        color: ${({ error }) => (error ? '#f53030' : '#666')};
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+
+    button {
+      width: 38%;
+      height: 42px;
+      background: #12b118;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 7px;
+      text-align: left;
+      font-family: 'SFPro';
+      font-size: 18px;
+      line-height: 44px;
+      letter-spacing: 0px;
+      color: #ffffff;
+    }
+  }
 `;
 
 export const CheckoutButton = styled(Link)`

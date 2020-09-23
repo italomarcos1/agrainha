@@ -8,6 +8,8 @@ import {
   Warning,
   ShippingWarning,
   CheckoutButton,
+  PriceInfo,
+  DiscountCoupon,
 } from './styles';
 
 import data from '~/data';
@@ -48,6 +50,41 @@ export default function Basket() {
             <Item item={p} />
           ))}
         </ItemsList>
+
+        <DiscountCoupon>
+          <strong>Cupom de Desconto</strong>
+          <div>
+            <input type="text" />
+            <button type="button">Aplicar</button>
+          </div>
+        </DiscountCoupon>
+
+        <PriceInfo style={{ marginTop: 26 }}>
+          <b>Subtotal</b>
+          <p>&euro; 167,92</p>
+        </PriceInfo>
+        <PriceInfo>
+          <b>Porte</b>
+          <p style={{ color: '#12B118' }}>Grátis</p>
+        </PriceInfo>
+        <PriceInfo>
+          <b>Cupom de Desconto</b>
+          <p>&euro; 10,00</p>
+        </PriceInfo>
+        <PriceInfo>
+          <b>Cupom CASHBACK desta compra</b>
+          <p>&euro; 16,79</p>
+        </PriceInfo>
+        <PriceInfo>
+          <b>Seu crédito CASHBACK</b>
+          <p>&euro; 0,00</p>
+        </PriceInfo>
+        <PriceInfo>
+          <b>TOTAL</b>
+          <p style={{ color: '#12B118', fontFamily: 'SFProBold' }}>
+            &euro; 150,00
+          </p>
+        </PriceInfo>
       </Container>
       <CheckoutButton to="/checkout">Continuar</CheckoutButton>
     </>
