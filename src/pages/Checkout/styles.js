@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled(Form)`
   width: 100%;
-  height: 100%;
   flex: 1;
   background-color: #fff;
   padding: 17px 15px;
   margin-bottom: 20px;
+  padding-bottom: 120px;
 `;
 
 export const CheckoutButton = styled(Link)`
