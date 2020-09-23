@@ -76,7 +76,7 @@ export const PriceInfo = styled.span`
 
   b {
     text-align: right;
-    font-family: 'SFProBold';
+    font-family: 'SFProSemiBold';
     font-size: 13px;
     line-height: 22px;
     letter-spacing: 0px;
