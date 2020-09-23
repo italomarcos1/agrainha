@@ -26,6 +26,8 @@ export const Container = styled.div`
 
     &::placeholder {
       color: ${({ error }) => (error ? '#f53030' : '#666')};
+      font-size: 18px;
+      line-height: 18px;
     }
   }
 `;
