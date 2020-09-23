@@ -25,7 +25,7 @@ export default function Checkout() {
     <>
       <CheckoutHeader />
 
-      <Container onSubmit={handleSubmit} style={{ height: 720 }}>
+      <Container onSubmit={handleSubmit}>
         <Input
           name="name"
           title="Nome"
@@ -46,19 +46,6 @@ export default function Checkout() {
           value={phone}
           onChange={({ target: { value } }) => setPhone(value)}
         />
-
-        {/* <input
-          type="text"
-          list="days"
-          placeholder="Choose a Day"
-          style={{
-            marginTop: 20,
-            borderWidth: 1,
-            borderStyle: 'solid',
-            borderColor: '#303',
-          }}
-        />
-        <datalist id="days" /> */}
 
         <InputMask
           title="NIF"

@@ -8,7 +8,6 @@ export const Container = styled(Form)`
   background-color: #fff;
   padding: 17px 15px;
   padding-bottom: 120px;
-  margin-bottom: 20px;
 
   select {
     background: #f2f2f2;

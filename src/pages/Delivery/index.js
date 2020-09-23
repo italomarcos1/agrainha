@@ -21,7 +21,7 @@ export default function Delivery() {
   return (
     <>
       <CheckoutHeader active={2} />
-      <Container onSubmit={handleSubmit} style={{ height: 720 }}>
+      <Container onSubmit={handleSubmit}>
         <Select
           title="Método de entrega"
           options={['Entrega em casa - Grátis']}
