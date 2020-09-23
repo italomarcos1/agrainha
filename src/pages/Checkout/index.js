@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
 import Input from '~/components/Input';
 import PhoneInput from '~/components/PhoneInput';
@@ -22,6 +22,10 @@ export default function Checkout() {
   const [wantsNif, setWantsNif] = useState('no');
   const [phone, setPhone] = useState('');
   const [nif, setNif] = useState('');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSubmit = useCallback(formData => {
     console.log(formData); // eslint-disable-line
@@ -48,7 +52,7 @@ export default function Checkout() {
         <Line />
       </SubHeader>
 
-      <Container onSubmit={handleSubmit} style={{ height: 900 }}>
+      <Container onSubmit={handleSubmit} style={{ height: 720 }}>
         <Input name="name" title="Nome" style={{ marginTop: 0 }} />
         <Input name="nickname" title="Apelido" />
         <Input name="email" title="Email" />

@@ -13,16 +13,7 @@ function PhoneInput({ name, placeholder, mask, style, ...rest }) {
     <Container style={style}>
       <Title>Telemóvel</Title>
       <div>
-        <Select
-          options={phoneCodes}
-          style={{
-            marginTop: 0,
-            borderTopRightRadius: 0,
-            borderBottomRightRadius: 0,
-            backgroundPositionX: '90%',
-            width: '30%',
-          }}
-        />
+        <Select options={phoneCodes} />
         <InputMask
           name={name}
           placeholder={placeholder}
