@@ -16,7 +16,7 @@ export const Container = styled.div`
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       background-position-x: 90%;
-      width: 25%;
+      width: 30%;
       font-family: 'SFPro';
       font-size: 15px;
       line-height: 22px;
@@ -25,7 +25,7 @@ export const Container = styled.div`
     }
 
     input {
-      width: 75%;
+      width: 70%;
       height: 42px;
       background-color: #fff;
       border: 1px solid #e0e0e0;
