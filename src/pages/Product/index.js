@@ -6,6 +6,7 @@ import ProductItem from '~/components/Product';
 import Grid from '~/components/Grid';
 import Cashback from '~/components/Cashback';
 import Title from '~/components/Title';
+import Select from '~/components/Select';
 
 import BackIcon from '~/assets/icons/chevron-left.svg';
 import coins from '~/assets/coins.svg';
@@ -27,7 +28,6 @@ import {
   Options,
   PriceContainer,
   FavoriteButton,
-  Amount,
   Details,
 } from './styles';
 
@@ -42,6 +42,7 @@ export default function Product({ match }) {
   const [gridHeight, setGridHeight] = useState(700);
 
   const [amount, setAmount] = useState(0);
+  const [productAmount, setProductAmount] = useState('');
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -93,13 +94,20 @@ export default function Product({ match }) {
           pretende ajudar nosso planeta, envie pelos nossos motoristas todo o
           plástico que não precisa que nós lhe damos-lhe outra vida :)`}
           </ProductDescription>
-          <Amount>Quantidade</Amount>
-          <select name="amount" id="amount" style={{ height: 42 }}>
-            <option value="1">{`1 ${product.title}`}</option>
-            <option value="2">{`2 ${product.title}`}</option>
-            <option value="3">{`3 ${product.title}`}</option>
-            <option value="4">{`4 ${product.title}`}</option>
-          </select>
+
+          <Select
+            title="Quantidade"
+            options={[
+              `1 ${product.title}`,
+              `2 ${product.title}`,
+              `3 ${product.title}`,
+              `4 ${product.title}`,
+            ]}
+            value={productAmount}
+            onChange={({ target: { value } }) => setProductAmount(value)}
+            style={{ height: 42, paddingRight: 20 }}
+          />
+
           <PriceContainer>
             <div>
               <strong>&euro;{product.newPrice}</strong>

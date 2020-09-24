@@ -9,8 +9,8 @@ export default function PageNotFound() {
         <Title>Que pena :/</Title>
         <Subtitle>A página que procura não foi encontrada.</Subtitle>
 
-        <ChangeInformationButton>
-          Retornar à pagina inicial
+        <ChangeInformationButton to="/">
+          Retornar à Página Inicial
         </ChangeInformationButton>
       </Container>
     </>

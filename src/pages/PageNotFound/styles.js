@@ -10,6 +10,7 @@ export const Container = styled.div`
   margin-top: 51px;
   align-items: center;
   justify-content: flex-start;
+  padding: 30px;
 `;
 
 export const Title = styled.h1`

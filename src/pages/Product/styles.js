@@ -73,7 +73,7 @@ export const PriceContainer = styled.div`
   width: 100%;
   padding: 0;
   font-family: 'SFPro';
-  margin-top: 10px;
+  margin-top: 50px;
 
   /* background-color: #404; */
 
@@ -132,16 +132,6 @@ export const FavoriteButton = styled.button`
   top: 17.5%;
   left: 85%;
   background: none;
-`;
-
-export const Amount = styled.strong`
-  text-align: left;
-  font-family: 'SFProBold';
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 0px;
-  color: #393939;
-  margin: 25px 0 7px;
 `;
 
 export const Options = styled.div`

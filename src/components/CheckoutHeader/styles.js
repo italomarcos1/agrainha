@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Header = styled.div`
   display: flex;
@@ -42,13 +41,20 @@ export const Line = styled.hr`
   left: 12px;
 `;
 
-export const OptionContainer = styled(Link)`
+export const OptionContainer = styled.button.attrs({
+  type: 'button',
+})`
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   height: 39px;
   z-index: 2;
+  background: none;
+
+  &[disabled] {
+    opacity: 1;
+  }
 `;
 
 export const OptionTitle = styled.strong`
@@ -57,7 +63,7 @@ export const OptionTitle = styled.strong`
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0px;
-  color: #fff;
+  color: ${({ disabled }) => (disabled ? '#999' : '#fff')};
   opacity: 1;
   height: 14px;
 `;
