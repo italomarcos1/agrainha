@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Form } from '@unform/web';
-import { Link } from 'react-router-dom';
 
 export const Container = styled(Form)`
   width: 100%;
@@ -10,7 +9,9 @@ export const Container = styled(Form)`
   padding-bottom: 120px;
 `;
 
-export const CheckoutButton = styled(Link)`
+export const CheckoutButton = styled.button.attrs({
+  type: 'button',
+})`
   height: 67px;
   background: #12b118 0% 0% no-repeat padding-box;
   width: 100%;

@@ -11,16 +11,16 @@ function CustomRadioButton({ title, option, setOption, style }) {
       <div>
         <span>
           <RadioButton
-            selected={option === 'yes'}
-            onClick={() => setOption('yes')}
+            selected={option === 'SIM'}
+            onClick={() => setOption('SIM')}
           />
           SIM
         </span>
         <span>
           <RadioButton
             style={{ marginLeft: 16 }}
-            selected={option === 'no'}
-            onClick={() => setOption('no')}
+            selected={option === 'NÃO'}
+            onClick={() => setOption('NÃO')}
           />
           NÃO
         </span>

@@ -22,6 +22,7 @@ export default function InputMask({ name, ...rest }) {
       },
     });
   }, [fieldName, registerField]);
+
   return <ReactInputMask ref={inputRef} {...rest} />;
 }
 

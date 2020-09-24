@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from '~/pages/Home';
 import Menu from '~/pages/Menu';
+import PageNotFound from '~/pages/PageNotFound';
 import Checkout from '~/pages/Checkout';
 import Delivery from '~/pages/Delivery';
 import Payment from '~/pages/Payment';
@@ -23,6 +24,7 @@ export default function Routes() {
       <Route path="/product/:index" component={Product} />
       <Route path="/basket" component={Basket} />
       <Route path="/profile" component={Profile} />
+      <Route path="/" component={PageNotFound} />
     </Switch>
   );
 }

@@ -17,6 +17,8 @@ export const Select = styled.select`
   background-position-y: 16px;
 
   border: 1px solid #e0e0e0;
+  border-color: ${({ error }) => (error ? '#f53030' : '#e0e0e0')};
+  border-width: ${({ error }) => (error ? 2 : 1)}px;
   border-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;

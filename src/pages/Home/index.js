@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { useSelector } from 'react-redux';
 import Product from '~/components/Product';
 import Category from '~/components/Category';
 import Grid from '~/components/Grid';
@@ -18,7 +18,9 @@ import { Container } from './styles';
 export default function Home() {
   const [gridHeight, setGridHeight] = useState(700);
   const [categoriesHeight, setCategoriesHeight] = useState(700);
+  const bar = useSelector(state => state.cart.foo);
 
+  console.log(bar);
   useEffect(() => {
     const productsGridRows = Math.ceil(data.length / 2);
     const productsGridHeight = productsGridRows * 415;

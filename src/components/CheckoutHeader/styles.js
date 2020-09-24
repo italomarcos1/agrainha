@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Header = styled.div`
   display: flex;
@@ -41,7 +42,7 @@ export const Line = styled.hr`
   left: 12px;
 `;
 
-export const OptionContainer = styled.div`
+export const OptionContainer = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: space-between;

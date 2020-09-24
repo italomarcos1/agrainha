@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 import Item from '~/components/Item';
 import CheckoutHeader from '~/components/CheckoutHeader';
@@ -19,6 +20,28 @@ export default function Delivery() {
     window.scrollTo(0, 0);
   }, []);
 
+  const userData = useSelector(state => state.user.info);
+
+  const {
+    name,
+    nickname,
+    email,
+    phone,
+    nif,
+    countryCode,
+    wantsNif,
+    place,
+    number,
+    district,
+    city,
+    postCode,
+    deliveryMethod,
+    deliveryDate,
+    deliveryTime,
+    // deliveryLocation,
+    location,
+  } = userData;
+
   const handleSubmit = useCallback(formData => {
     console.log(formData); // eslint-disable-line
   }, []);
@@ -30,46 +53,50 @@ export default function Delivery() {
         <h1>Encomenda Nº 827712</h1>
         <Info>
           <b>Nome</b>
-          <p>Michel Oliveira</p>
+          <p>
+            {name} {nickname}
+          </p>
         </Info>
         <Info>
           <b>NIF</b>
-          <p>267182761</p>
+          <p>{nif}</p>
         </Info>
         <Info>
           <b>NIF na Factura</b>
-          <p>SIM</p>
+          <p>{wantsNif}</p>
         </Info>
         <Info>
           <b>Email</b>
-          <p>gomakemoney@tgoo.pt</p>
+          <p>{email}</p>
         </Info>
         <Info>
           <b>Telemóvel</b>
-          <p>+351 92 760 94 40</p>
+          <p>
+            +{countryCode} {phone}
+          </p>
         </Info>
         <Info custom>
           <b style={{ height: 62 }}>Morada</b>
           <p>
-            Rua da Liberdade, 21
+            {place}, {number}
             <br />
-            2740-164, Porto Salvo
+            {postCode}, {district}
             <br />
-            Oeiras, Portugal Continental
+            {city}, {location}
           </p>
         </Info>
         <Info>
           <b>Método de envio</b>
-          <p>Entrega em casa - Grátis</p>
+          <p>{deliveryMethod}</p>
         </Info>
         <Info custom>
           <b style={{ height: 62 }}>Data de envio</b>
           <p>
             Terça-feira
             <br />
-            25 de Setembro de 2020
+            {deliveryDate}
             <br />
-            Entre 10:30h e 13:30h
+            {deliveryTime}
           </p>
         </Info>
         <ChangeInformationButton to="/delivery">

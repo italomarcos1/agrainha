@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Select } from './styles';
 
-export default function CountryCodeSelect({ options, style }) {
+export default function CountryCodeSelect({ options, style, error, ...rest }) {
   return (
-    <Select style={style}>
+    <Select style={style} error={error} {...rest}>
       {options.map(o => (
-        <option value={o}>{`${o.country} +${o.code}`}</option>
+        <option value={o.code}>{`${o.country} +${o.code}`}</option>
       ))}
     </Select>
   );
@@ -15,8 +15,10 @@ export default function CountryCodeSelect({ options, style }) {
 CountryCodeSelect.propTypes = {
   options: PropTypes.oneOfType([PropTypes.array]).isRequired,
   style: PropTypes.oneOfType([PropTypes.object]),
+  error: PropTypes.bool,
 };
 
 CountryCodeSelect.defaultProps = {
   style: {},
+  error: false,
 };

@@ -21,6 +21,7 @@ export const Container = styled.div`
       border-radius: 4px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      border-left-width: ${({ error }) => (error ? 0 : 1)}px;
       padding: 12px;
       text-align: left;
       font-family: 'SFPro';

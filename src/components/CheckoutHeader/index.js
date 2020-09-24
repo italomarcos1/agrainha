@@ -19,15 +19,15 @@ export default function CheckoutHeader({ active }) {
         <img src={logo} alt="Logo" />
       </Header>
       <SubHeader>
-        <OptionContainer>
+        <OptionContainer to="/checkout">
           <OptionTitle>Informações</OptionTitle>
           <OptionNumber active>1</OptionNumber>
         </OptionContainer>
-        <OptionContainer>
+        <OptionContainer to="/delivery">
           <OptionTitle>Entrega</OptionTitle>
           <OptionNumber active={active === 2 || active === 3}>2</OptionNumber>
         </OptionContainer>
-        <OptionContainer>
+        <OptionContainer to="/payment">
           <OptionTitle>Pagamento</OptionTitle>
           <OptionNumber active={active === 3}>3</OptionNumber>
         </OptionContainer>

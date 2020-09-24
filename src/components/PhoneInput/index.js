@@ -8,12 +8,27 @@ import { Container, Title } from './styles';
 
 import { phoneCodes } from '~/data';
 
-function PhoneInput({ name, placeholder, mask, style, ...rest }) {
+function PhoneInput({
+  name,
+  placeholder,
+  setCountryCode,
+  countryCode,
+  mask,
+  style,
+  error,
+  ...rest
+}) {
   return (
-    <Container style={style}>
-      <Title>Telemóvel</Title>
+    <Container style={style} error={error}>
+      <Title error={error}>Telemóvel</Title>
       <div>
-        <Select options={phoneCodes} />
+        <Select
+          options={phoneCodes}
+          onChange={({ target: { value } }) => {
+            setCountryCode(value);
+          }}
+          value={countryCode}
+        />
         <InputMask
           name={name}
           placeholder={placeholder}
@@ -29,6 +44,8 @@ PhoneInput.propTypes = {
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   mask: PropTypes.string.isRequired,
+  setCountryCode: PropTypes.func.isRequired,
+  countryCode: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   error: PropTypes.bool.isRequired,
   style: PropTypes.oneOfType([PropTypes.object]),
