@@ -145,6 +145,7 @@ export default function Checkout() {
           placeholder="Informe seu email"
           onChange={({ target: { value } }) => setEmail(value)}
           error={invalidEmail}
+          type="email"
         />
 
         <PhoneInput

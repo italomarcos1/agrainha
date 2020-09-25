@@ -10,6 +10,7 @@ export default function CustomInput({
   full,
   fontSize,
   style,
+  type,
   error,
   ...rest
 }) {
@@ -35,7 +36,7 @@ export default function CustomInput({
         error={error}
         ref={inputRef}
         defaultValue={defaultValue}
-        type="text"
+        type={type}
         {...rest}
       />
     </Container>
@@ -55,6 +56,6 @@ CustomInput.propTypes = {
 CustomInput.defaultProps = {
   full: false,
   fontSize: 14,
-  type: 'none',
+  type: 'text',
   style: {},
 };
