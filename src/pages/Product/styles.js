@@ -185,8 +185,7 @@ export const Options = styled.div`
     border-radius: 4px;
     text-align: left;
     font-family: 'SFPro';
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 13px;
     letter-spacing: 0px;
     color: #fff;
     /* padding-left: 18px; */
@@ -194,7 +193,7 @@ export const Options = styled.div`
 
     img {
       margin-right: 7px;
-      width: 12%;
+      width: 20%;
     }
   }
 `;

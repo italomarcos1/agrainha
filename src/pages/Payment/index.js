@@ -109,7 +109,7 @@ export default function Delivery() {
           Alterar Informações de Envio
         </ChangeInformationButton>
         {products.length === 0 ? (
-          <div>
+          <div style={{ marginTop: 26 }}>
             <EmptyTitle>Nada por aqui ainda :/</EmptyTitle>
             <EmptySubtitle>Sua cesta de compras está vazia.</EmptySubtitle>
             <BackToHomeScreenButton to="/">
