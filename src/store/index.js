@@ -7,7 +7,7 @@ import createStore from '~/store/createStore';
 import rootReducer from '~/store/modules/rootReducer';
 import rootSaga from '~/store/modules/rootSaga';
 
-const __DEV__ = true;
+// const __DEV__ = true;
 
 // const sagaMonitor = __DEV__ ? console.tron.createSagaMonitor() : null;
 const sagaMonitor = null;
