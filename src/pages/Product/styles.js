@@ -185,7 +185,7 @@ export const Options = styled.div`
     border-radius: 4px;
     text-align: left;
     font-family: 'SFPro';
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0px;
     color: #fff;
     /* padding-left: 18px; */
