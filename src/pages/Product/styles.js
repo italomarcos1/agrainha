@@ -178,7 +178,7 @@ export const Options = styled.div`
   button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 50%;
     height: 100%;
     background-color: #a4b91d;
@@ -192,7 +192,7 @@ export const Options = styled.div`
     padding: 0 9px;
 
     img {
-      margin-right: 7px;
+      /* margin-right: 7px; */
       width: 16%;
     }
   }
