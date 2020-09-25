@@ -13,6 +13,7 @@ import {
   DiscountCoupon,
   EmptyTitle,
   EmptySubtitle,
+  BackToHomeScreenButton,
 } from './styles';
 
 // import data from '~/data';
@@ -56,6 +57,9 @@ export default function Basket() {
             <div>
               <EmptyTitle>Nada por aqui ainda :/</EmptyTitle>
               <EmptySubtitle>Sua cesta de compras está vazia.</EmptySubtitle>
+              <BackToHomeScreenButton to="/">
+                Retornar à Página Inicial
+              </BackToHomeScreenButton>
             </div>
           ) : (
             products.map(p => {
@@ -64,7 +68,7 @@ export default function Basket() {
           )}
         </ItemsList>
 
-        {products.length === 0 && (
+        {products.length !== 0 && (
           <>
             <DiscountCoupon>
               <strong>Cupom de Desconto</strong>
@@ -102,12 +106,14 @@ export default function Basket() {
           </>
         )}
       </Container>
-      <CheckoutButton
-        disabled={products.length === 0}
-        onClick={() => history.push('/checkout')}
-      >
-        Continuar
-      </CheckoutButton>
+      {products.length !== 0 && (
+        <CheckoutButton
+          disabled={products.length === 0}
+          onClick={() => history.push('/checkout')}
+        >
+          Continuar
+        </CheckoutButton>
+      )}
     </>
   );
 }
