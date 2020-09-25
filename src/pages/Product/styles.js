@@ -185,15 +185,16 @@ export const Options = styled.div`
     border-radius: 4px;
     text-align: left;
     font-family: 'SFPro';
-    font-size: 13px;
+    font-size: 14px;
     line-height: 22px;
     letter-spacing: 0px;
     color: #fff;
-    padding-left: 18px;
+    /* padding-left: 18px; */
+    padding-left: 9px;
 
     img {
       margin-right: 7px;
-      width: 20%;
+      width: 12%;
     }
   }
 `;

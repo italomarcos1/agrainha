@@ -147,8 +147,5 @@ export const Options = styled.div`
     /* height: 45px; */
     background-color: #a4b91d;
     border-radius: 4px;
-    img {
-      width: 12%;
-    }
   }
 `;
