@@ -2,7 +2,6 @@ import produce from 'immer';
 
 const INITIAL_STATE = {
   profile: null,
-  tabBar: true,
   order: null,
   info: null,
 };

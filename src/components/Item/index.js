@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useCallback } from 'react';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 // import { Container } from './styles';
 
 import minus from '~/assets/icons/minus.svg';
 import plus from '~/assets/icons/plus.svg';
 import close from '~/assets/icons/close.svg';
+
+import {
+  removeFromCartRequest,
+  updateAmount,
+} from '~/store/modules/cart/actions';
 
 import {
   Container,
@@ -20,7 +26,18 @@ import {
 export default function Item({ item }) {
   const { id, picture, title, newPrice, amount } = item;
 
-  const [itemAmount, setItemAmount] = useState(amount);
+  const dispatch = useDispatch();
+
+  const handleRemoveFromCart = useCallback(() => {
+    dispatch(removeFromCartRequest(id));
+  }, [id, dispatch]);
+
+  const handleUpdateAmount = useCallback(
+    updatedAmount => {
+      dispatch(updateAmount(id, updatedAmount));
+    },
+    [id, dispatch]
+  );
 
   return (
     <Container key={id}>
@@ -33,19 +50,19 @@ export default function Item({ item }) {
       </div>
       <Separator />
       <Options>
-        <DeleteItem>
+        <DeleteItem onClick={handleRemoveFromCart}>
           <img src={close} alt="Delete Item" />
         </DeleteItem>
         <div>
           <button
             type="button"
-            disabled={itemAmount === 0}
-            onClick={() => setItemAmount(itemAmount - 1)}
+            disabled={amount === 1}
+            onClick={() => handleUpdateAmount(amount - 1)}
           >
             <img src={minus} alt="icon" />
           </button>
-          <strong>{itemAmount}</strong>
-          <button type="button" onClick={() => setItemAmount(itemAmount + 1)}>
+          <strong>{amount}</strong>
+          <button type="button" onClick={() => handleUpdateAmount(amount + 1)}>
             <img src={plus} alt="icon" />
           </button>
         </div>

@@ -101,7 +101,7 @@ export const ShippingWarning = styled.div`
 export const ItemsList = styled.ul`
   display: flex;
   flex: 1;
-  margin-top: 51px;
+  margin-top: 13px;
   flex-direction: column;
   /* background-color: #f2f202; */
 `;

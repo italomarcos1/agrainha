@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Redirect } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Input from '~/components/Input';
@@ -14,14 +14,14 @@ import { setInfo } from '~/store/modules/user/actions';
 import { Container, CheckoutButton } from './styles';
 
 export default function Delivery() {
+  const dispatch = useDispatch();
+  const userData = useSelector(state => state.user.info);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const { nameIsValid, postCodeIsValid } = useValidation();
-
-  const dispatch = useDispatch();
-  const userData = useSelector(state => state.user.info);
 
   const [deliveryMethod, setDeliveryMethod] = useState(() => {
     return userData?.deliveryMethod

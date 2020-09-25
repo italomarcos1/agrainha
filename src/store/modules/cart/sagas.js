@@ -10,35 +10,47 @@ import {
   removeFromFavoritesSuccess,
 } from './actions';
 
+import productsList from '~/data';
+
 export function* addToCart({ payload }) {
   const { product, amount } = payload;
 
   const products = yield select(state => state.cart.products);
-
-  const alreadyInCart = products.findIndex(
-    p => p.options.product.id === product.id
-  );
+  // console.tron.log(product);
+  const alreadyInCart = products.findIndex(p => p.id === product.id);
 
   if (alreadyInCart >= 0) {
-    const { rowId } = products[alreadyInCart];
+    console.tron.log('already in cart');
+    // const { rowId } = products[alreadyInCart];
 
-    yield call(api.put, `cart/${rowId}/${amount}`);
+    // yield call(api.put, `cart/${rowId}/${amount}`);
 
-    yield put(updateAmount(product.id, products[alreadyInCart].qty + amount));
+    yield put(
+      updateAmount(product.id, products[alreadyInCart].amount + amount)
+    );
   } else {
-    const {
-      data: { data },
-    } = yield call(api.post, 'cart', {
-      product_id: product.id,
-      quantity: amount,
+    console.tron.log('not in cart');
+
+    // const {
+    //   data: { data },
+    // } = yield call(api.post, 'cart', {
+    //   product_id: product.id,
+    //   quantity: amount,
+    // });
+    const data = productsList.findIndex(p => {
+      // if (p.id === product.id) {
+      //   console.tron.log(p);
+      // }
+      return p.id === product.id;
     });
-    yield put(addToCartSuccess(data));
+    console.tron.log(productsList[data]);
+    yield put(addToCartSuccess({ ...productsList[data], amount }));
   }
 }
 export function* removeFromCart({ payload }) {
   const { id } = payload;
 
-  yield call(api.delete, `cart/${id}`);
+  // yield call(api.delete, `cart/${id}`);
 
   yield put(removeFromCartSuccess(id));
 }

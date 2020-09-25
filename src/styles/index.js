@@ -25,6 +25,10 @@ export default createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
+    textarea, input[type="text"] {
+      -webkit-appearance: none;
+    }
+
     @font-face {
       font-family: "SFPro";
       src: local('SFPro'), url(${SFPro}) format('opentype');

@@ -198,16 +198,34 @@ export const Options = styled.div`
   }
 `;
 
-export const Details = styled.button.attrs({
+export const DetailsTitle = styled.button.attrs({
   type: 'button',
 })`
   width: 100%;
   height: 43px;
-  background-color: #f7f9ec;
+  background-color: #f2f2f2;
   padding: 12px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #494949;
-  border-bottom: 1px solid #494949;
+  border-top: 0.1px solid #494949;
+  border-bottom: 0.1px solid #494949;
+
+  img {
+    width: 6%;
+  }
+`;
+
+export const Details = styled.div`
+  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  background-color: #f2f2f2;
+  width: 100%;
+  border-radius: 4px;
+  padding: 15px;
+  padding-top: 0;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #393939;
+  font-size: 12px;
+  line-height: 22px;
 `;

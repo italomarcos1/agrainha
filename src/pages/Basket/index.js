@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import {
   Header,
@@ -12,13 +13,15 @@ import {
   DiscountCoupon,
 } from './styles';
 
-import data from '~/data';
+// import data from '~/data';
 
 import Item from '~/components/Item';
 
 import chevron_left from '~/assets/icons/chevron-left.svg';
 
 export default function Basket() {
+  const products = useSelector(state => state.cart.products);
+
   return (
     <>
       <Header>
@@ -46,9 +49,13 @@ export default function Basket() {
           </b>
         </ShippingWarning>
         <ItemsList>
-          {data.map(p => (
-            <Item item={p} />
-          ))}
+          {products.length === 0 ? (
+            <h1>Lista vazia</h1>
+          ) : (
+            products.map(p => {
+              return <Item item={p} />;
+            })
+          )}
         </ItemsList>
 
         <DiscountCoupon>

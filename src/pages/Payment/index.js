@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Item from '~/components/Item';
 import CheckoutHeader from '~/components/CheckoutHeader';
 
-import data from '~/data';
+// import data from '~/data';
 
 import {
   Container,
@@ -21,6 +21,7 @@ export default function Delivery() {
   }, []);
 
   const userData = useSelector(state => state.user.info);
+  const products = useSelector(state => state.cart.products);
 
   const {
     name,
@@ -104,9 +105,13 @@ export default function Delivery() {
         </ChangeInformationButton>
         <h1 style={{ marginTop: 26 }}>Produtos</h1>
         <ItemsList>
-          {data.map(p => (
-            <Item item={p} />
-          ))}
+          {products.length === 0 ? (
+            <h1>Lista vazia</h1>
+          ) : (
+            products.map(p => {
+              return <Item item={p} />;
+            })
+          )}
         </ItemsList>
         <PriceInfo style={{ marginTop: 26 }}>
           <b>Subtotal</b>

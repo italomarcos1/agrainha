@@ -20,7 +20,7 @@ export default function Checkout() {
   const history = useHistory();
   const userData = useSelector(state => state.user.info);
 
-  const { nameIsValid } = useValidation();
+  const { nameIsValid, mailIsValid } = useValidation();
 
   const [nif, setNif] = useState(() => {
     return userData?.nif ? userData.nif : '';
@@ -35,6 +35,9 @@ export default function Checkout() {
   const nifIsValid = useCallback(() => {
     return nifValidation.test(nif);
   }, [nif, nifValidation]);
+
+  const [email, setEmail] = useState('');
+  const [invalidEmail, setInvalidEmail] = useState(false);
 
   const phoneValidation = useMemo(() => {
     return new RegExp(/^[0-9][0-9]\s[0-9][0-9][0-9]\s[0-9][0-9]\s[0-9][0-9]$/);
@@ -81,6 +84,7 @@ export default function Checkout() {
         setInvalidFields(data.map(el => nameIsValid(el)));
         setInvalidPhone(!phoneIsValid());
         setInvalidNif(!nifIsValid());
+        setInvalidEmail(!mailIsValid(email));
 
         return;
       }
@@ -101,10 +105,12 @@ export default function Checkout() {
       dispatch,
       history,
       nameIsValid,
+      mailIsValid,
       phoneIsValid,
       nifIsValid,
       countryCode,
       phone,
+      email,
       nif,
       wantsNif,
     ]
@@ -137,7 +143,8 @@ export default function Checkout() {
           name="email"
           title="Email"
           placeholder="Informe seu email"
-          error={invalidFields[2]}
+          onChange={({ target: { value } }) => setEmail(value)}
+          error={invalidEmail}
         />
 
         <PhoneInput
@@ -159,6 +166,7 @@ export default function Checkout() {
           value={nif}
           onChange={({ target: { value } }) => setNif(value)}
           error={invalidNif}
+          type="number"
         />
 
         <RadioButton

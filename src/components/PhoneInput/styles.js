@@ -12,6 +12,8 @@ export const Container = styled.div`
     height: 42px;
 
     input {
+      /* -webkit-appearance: none; */
+
       width: 65%;
       height: 42px;
       background-color: #fff;

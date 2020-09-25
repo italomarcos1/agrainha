@@ -7,6 +7,8 @@ export const Container = styled.div`
 `;
 
 export const Input = styled.input`
+  /* -webkit-appearance: none; */
+
   width: 100%;
   height: 42px;
   margin-top: 7px;

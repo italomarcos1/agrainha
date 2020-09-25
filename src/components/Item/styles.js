@@ -50,8 +50,9 @@ export const Price = styled.strong`
 
 export const Separator = styled.hr`
   width: 100%;
+  color: #e0e0e0;
+  opacity: 0.3;
   height: 1px;
-  border: 1px solid #e0e0e0;
   margin: 10.5px auto 8.5px;
 `;
 

@@ -8,6 +8,8 @@ export const Container = styled.div`
   margin-top: 20px;
 
   input {
+    /* -webkit-appearance: none; */
+
     width: 100%;
     height: 42px;
     margin-top: 7px;

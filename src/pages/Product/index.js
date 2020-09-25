@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import ProductItem from '~/components/Product';
@@ -8,6 +9,8 @@ import Cashback from '~/components/Cashback';
 import Title from '~/components/Title';
 import Select from '~/components/Select';
 
+import { addToCartRequest } from '~/store/modules/cart/actions';
+
 import BackIcon from '~/assets/icons/chevron-left.svg';
 import coins from '~/assets/coins.svg';
 import minus from '~/assets/icons/minus.svg';
@@ -15,6 +18,9 @@ import plus from '~/assets/icons/plus.svg';
 import basket_active from '~/assets/icons/basket_active.svg';
 import heartOn from '~/assets/icons/heart-on.svg';
 import heartOff from '~/assets/icons/heart-off.svg';
+
+import arrow_down from '~/assets/icons/arrow-down.svg';
+import arrow_up from '~/assets/icons/arrow-up.svg';
 
 import data from '~/data';
 
@@ -28,6 +34,7 @@ import {
   Options,
   PriceContainer,
   FavoriteButton,
+  DetailsTitle,
   Details,
 } from './styles';
 
@@ -36,6 +43,8 @@ export default function Product({ match }) {
     params: { index },
   } = match;
 
+  const dispatch = useDispatch();
+
   const product = data[index];
 
   const [isFavorite, setIsFavorite] = useState(product.isFavorite);
@@ -43,6 +52,14 @@ export default function Product({ match }) {
 
   const [amount, setAmount] = useState(0);
   const [productAmount, setProductAmount] = useState('');
+
+  const [detailsOpen, setDetailsOpen] = useState(false);
+  const [informationOpen, setInformationOpen] = useState(false);
+
+  const handleAddToCart = useCallback(() => {
+    dispatch(addToCartRequest(product, amount));
+    setAmount(0);
+  }, [product, amount, dispatch]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -105,7 +122,7 @@ export default function Product({ match }) {
             ]}
             value={productAmount}
             onChange={({ target: { value } }) => setProductAmount(value)}
-            style={{ height: 42, paddingRight: 20 }}
+            style={{ height: 42 }}
           />
 
           <PriceContainer>
@@ -140,27 +157,56 @@ export default function Product({ match }) {
                 <img src={plus} alt="icon" />
               </button>
             </div>
-            <button type="button">
+            <button
+              type="button"
+              disabled={amount === 0}
+              onClick={handleAddToCart}
+            >
               <img src={basket_active} alt="icon" />
               Adicionar ao cesto
             </button>
           </Options>
 
-          <Details
-            onClick={() => {}}
+          <DetailsTitle
+            onClick={() => setDetailsOpen(!detailsOpen)}
             style={{
-              borderBottomColor: '#999',
-              borderBottomWidth: 0.1,
               marginTop: 38,
+              borderBottomWidth: 0,
             }}
           >
             Descrição do Produto
+            <img src={detailsOpen ? arrow_up : arrow_down} alt="" />
+          </DetailsTitle>
+          <Details isOpen={detailsOpen}>
+            Origem: Portugal <br />
+            Região: Algarve <br />
+            COMO ESCOLHER: Opte pelo Abacate de consistência firme e intacto.
+            <br />
+            BENEFÍCIOS E RECOMENDAÇÕES:
+            <br /> • MÚSCULOS: Reparador muscular;
+            <br /> • ARTICULAÇÕES Combate a artrite;
+            <br /> • PELE: Retardador de envelhecimento;
+            <br /> • CORAÇÃO: Previne doenças cardiovasculares;
+            <br /> • INTESTINO: Bom funcionamento do trânsito intestinal;
+            <br /> • OLHOS: Previne a degeneração múscular.
           </Details>
-          <Details
-            onClick={() => {}}
-            style={{ borderTopColor: '#999', borderTopWidth: 0.1 }}
+          <DetailsTitle
+            onClick={() => setInformationOpen(!informationOpen)}
+            style={{
+              borderTopWidth: 0.1,
+              ...(informationOpen
+                ? { borderBottomWidth: 0 }
+                : { borderBottomWidth: 0.1 }),
+            }}
           >
             Informação Técnica
+            <img src={informationOpen ? arrow_up : arrow_down} alt="" />
+          </DetailsTitle>
+          <Details isOpen={informationOpen}>
+            CONSERVAÇÃO: Colocar à temperatura ambiente em fruteira aberta.
+            Aconselha - se a conservação a uma temperatura de 16ºC durante um
+            período até 4 dias. Quando maduro colocar no frigorífico (pele 100%
+            escurecida).
           </Details>
         </ProductInfo>
 

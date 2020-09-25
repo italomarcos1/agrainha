@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import arrow from '~/assets/icons/arrow-down.svg';
+import arrow from '~/assets/icons/arrow.svg';
 
 export const Select = styled.select`
   -webkit-appearance: none;

@@ -17,7 +17,7 @@ export default [
     title: 'Água com Gás Mineral Natural Gaseificada 25 cl Castello PH de 20º',
     oldPrice: '10.99',
     newPrice: '9.80',
-    amount: 2,
+    amount: 0,
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export default [
     title: 'Abóbora',
     oldPrice: '10.99',
     newPrice: '9.80',
-    amount: 6,
+    amount: 0,
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export default [
     title: 'Azeite de Oliva Extra Virgem',
     oldPrice: '10.99',
     newPrice: '9.80',
-    amount: 2,
+    amount: 0,
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export default [
     title: 'Croquete',
     oldPrice: '10.99',
     newPrice: '9.80',
-    amount: 5,
+    amount: 0,
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ export default [
     title: 'Grãos Diversos',
     oldPrice: '10.99',
     newPrice: '9.80',
-    amount: 1,
+    amount: 0,
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export default [
     title: 'Maça Verde Kg',
     oldPrice: '10.99',
     newPrice: '9.80',
-    amount: 7,
+    amount: 0,
   },
   {
     id: 7,
@@ -65,7 +65,7 @@ export default [
     title: 'Nata Parmalat',
     oldPrice: '10.99',
     newPrice: '9.80',
-    amount: 8,
+    amount: 0,
   },
   {
     id: 8,
@@ -73,7 +73,7 @@ export default [
     title: 'Engradado',
     oldPrice: '2.99',
     newPrice: '1.80',
-    amount: 12,
+    amount: 0,
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ export default [
     title: 'Pão',
     oldPrice: '32.99',
     newPrice: '30.80',
-    amount: 7,
+    amount: 0,
   },
   {
     id: 10,
@@ -89,7 +89,7 @@ export default [
     title: 'Suco de Manga 1L',
     oldPrice: '7.99',
     newPrice: '5.50',
-    amount: 8,
+    amount: 0,
   },
   {
     id: 11,
@@ -97,7 +97,7 @@ export default [
     title: 'Vinho Português 1L',
     oldPrice: '29.99',
     newPrice: '12.50',
-    amount: 3,
+    amount: 0,
   },
 ];
 

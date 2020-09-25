@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-
-import arrow from '~/assets/icons/arrow-down.svg';
+import arrow from '~/assets/icons/arrow.svg';
 
 export const Select = styled.select`
   -webkit-appearance: none;
@@ -9,7 +8,7 @@ export const Select = styled.select`
   margin-top: 7px;
   background-image: url(${arrow});
   background-repeat: no-repeat;
-  background-position-x: 98%;
+  background-position-x: 96%;
   height: 42px;
   background-position-y: 16px;
   border: 1px solid #e0e0e0;
