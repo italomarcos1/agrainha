@@ -143,10 +143,12 @@ export const Options = styled.div`
     justify-content: center;
     width: 30%;
     height: 100%;
-
     /* width: 45px; */
     /* height: 45px; */
     background-color: #a4b91d;
     border-radius: 4px;
+    img {
+      width: 12%;
+    }
   }
 `;
