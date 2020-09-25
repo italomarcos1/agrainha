@@ -166,8 +166,7 @@ export default function Checkout() {
           value={nif}
           onChange={({ target: { value } }) => setNif(value)}
           error={invalidNif}
-          type="number"
-          inputmode="numeric"
+          type="phone"
         />
 
         <RadioButton
