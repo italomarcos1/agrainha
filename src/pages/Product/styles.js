@@ -189,11 +189,11 @@ export const Options = styled.div`
     letter-spacing: 0px;
     color: #fff;
     /* padding-left: 18px; */
-    padding-left: 9px;
+    padding: 0 9px;
 
     img {
       margin-right: 7px;
-      width: 20%;
+      width: 16%;
     }
   }
 `;
