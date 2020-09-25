@@ -105,13 +105,9 @@ export default function Delivery() {
         </ChangeInformationButton>
         <h1 style={{ marginTop: 26 }}>Produtos</h1>
         <ItemsList>
-          {products.length === 0 ? (
-            <h1>Lista vazia</h1>
-          ) : (
-            products.map(p => {
-              return <Item item={p} />;
-            })
-          )}
+          {products.map(p => (
+            <Item item={p} />
+          ))}
         </ItemsList>
         <PriceInfo style={{ marginTop: 26 }}>
           <b>Subtotal</b>

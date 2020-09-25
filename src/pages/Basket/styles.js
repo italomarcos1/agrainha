@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -168,7 +167,27 @@ export const DiscountCoupon = styled.div`
   }
 `;
 
-export const CheckoutButton = styled(Link)`
+export const EmptyTitle = styled.h1`
+  font-family: 'SFProSemiBold';
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  margin-bottom: 12px;
+  color: #393939;
+`;
+
+export const EmptySubtitle = styled.h2`
+  font-family: 'SFPro';
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  margin-bottom: 12px;
+  color: #393939;
+`;
+
+export const CheckoutButton = styled.button.attrs({
+  type: 'button',
+})`
   height: 67px;
   background: #12b118 0% 0% no-repeat padding-box;
   width: 100%;
