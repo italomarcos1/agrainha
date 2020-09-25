@@ -11,14 +11,16 @@ import {
   CheckoutButton,
   PriceInfo,
   DiscountCoupon,
-  EmptyTitle,
-  EmptySubtitle,
-  BackToHomeScreenButton,
 } from './styles';
 
 // import data from '~/data';
 
 import Item from '~/components/Item';
+import {
+  EmptyTitle,
+  EmptySubtitle,
+  BackToHomeScreenButton,
+} from '~/components/EmptyInfo';
 
 import chevron_left from '~/assets/icons/chevron-left.svg';
 

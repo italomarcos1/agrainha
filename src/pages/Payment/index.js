@@ -3,6 +3,11 @@ import { useSelector } from 'react-redux';
 
 import Item from '~/components/Item';
 import CheckoutHeader from '~/components/CheckoutHeader';
+import {
+  EmptyTitle,
+  EmptySubtitle,
+  BackToHomeScreenButton,
+} from '~/components/EmptyInfo';
 
 // import data from '~/data';
 
@@ -103,38 +108,50 @@ export default function Delivery() {
         <ChangeInformationButton to="/delivery">
           Alterar Informações de Envio
         </ChangeInformationButton>
-        <h1 style={{ marginTop: 26 }}>Produtos</h1>
-        <ItemsList>
-          {products.map(p => (
-            <Item item={p} />
-          ))}
-        </ItemsList>
-        <PriceInfo style={{ marginTop: 26 }}>
-          <b>Subtotal</b>
-          <p>&euro; 167,92</p>
-        </PriceInfo>
-        <PriceInfo>
-          <b>Porte</b>
-          <p style={{ color: '#12B118' }}>Grátis</p>
-        </PriceInfo>
-        <PriceInfo>
-          <b>Cupom de Desconto</b>
-          <p>&euro; 10,00</p>
-        </PriceInfo>
-        <PriceInfo>
-          <b>Cupom CASHBACK desta compra</b>
-          <p>&euro; 16,79</p>
-        </PriceInfo>
-        <PriceInfo>
-          <b>Seu crédito CASHBACK</b>
-          <p>&euro; 0,00</p>
-        </PriceInfo>
-        <PriceInfo>
-          <b>TOTAL</b>
-          <p style={{ color: '#12B118', fontFamily: 'SFProBold' }}>
-            &euro; 150,00
-          </p>
-        </PriceInfo>
+        {products.length === 0 ? (
+          <div>
+            <EmptyTitle>Nada por aqui ainda :/</EmptyTitle>
+            <EmptySubtitle>Sua cesta de compras está vazia.</EmptySubtitle>
+            <BackToHomeScreenButton to="/">
+              Retornar à Página Inicial
+            </BackToHomeScreenButton>
+          </div>
+        ) : (
+          <>
+            <h1 style={{ marginTop: 26 }}>Produtos</h1>
+            <ItemsList>
+              {products.map(p => (
+                <Item item={p} />
+              ))}
+            </ItemsList>
+            <PriceInfo style={{ marginTop: 26 }}>
+              <b>Subtotal</b>
+              <p>&euro; 167,92</p>
+            </PriceInfo>
+            <PriceInfo>
+              <b>Porte</b>
+              <p style={{ color: '#12B118' }}>Grátis</p>
+            </PriceInfo>
+            <PriceInfo>
+              <b>Cupom de Desconto</b>
+              <p>&euro; 10,00</p>
+            </PriceInfo>
+            <PriceInfo>
+              <b>Cupom CASHBACK desta compra</b>
+              <p>&euro; 16,79</p>
+            </PriceInfo>
+            <PriceInfo>
+              <b>Seu crédito CASHBACK</b>
+              <p>&euro; 0,00</p>
+            </PriceInfo>
+            <PriceInfo>
+              <b>TOTAL</b>
+              <p style={{ color: '#12B118', fontFamily: 'SFProBold' }}>
+                &euro; 150,00
+              </p>
+            </PriceInfo>
+          </>
+        )}
         <Warning>
           O pagamento da encomenda é efectuado no ato da entrega.
           <br /> A confirmação da sua encomenda será feita através de contacto
