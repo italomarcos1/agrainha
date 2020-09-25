@@ -20,7 +20,6 @@ export function* addToCart({ payload }) {
   const alreadyInCart = products.findIndex(p => p.id === product.id);
 
   if (alreadyInCart >= 0) {
-    console.tron.log('already in cart');
     // const { rowId } = products[alreadyInCart];
 
     // yield call(api.put, `cart/${rowId}/${amount}`);
@@ -29,8 +28,6 @@ export function* addToCart({ payload }) {
       updateAmount(product.id, products[alreadyInCart].amount + amount)
     );
   } else {
-    console.tron.log('not in cart');
-
     // const {
     //   data: { data },
     // } = yield call(api.post, 'cart', {
@@ -43,7 +40,7 @@ export function* addToCart({ payload }) {
       // }
       return p.id === product.id;
     });
-    console.tron.log(productsList[data]);
+    // console.tron.log(productsList[data]);
     yield put(addToCartSuccess({ ...productsList[data], amount }));
   }
 }

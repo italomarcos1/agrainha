@@ -7,7 +7,7 @@ export default function InputMask({ name, ...rest }) {
   const inputRef = useRef(null);
   const { fieldName, registerField /* error */ } = useField(name);
 
-  console.tron.log(rest.type);
+  // console.tron.log(rest.type);
 
   useEffect(() => {
     registerField({
