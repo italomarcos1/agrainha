@@ -35,6 +35,7 @@ export default function CustomInput({
         error={error}
         ref={inputRef}
         defaultValue={defaultValue}
+        type="text"
         {...rest}
       />
     </Container>
