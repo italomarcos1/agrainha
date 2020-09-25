@@ -33,7 +33,7 @@ function PhoneInput({
           name={name}
           placeholder={placeholder}
           mask={mask}
-          type="phone"
+          type="tel"
           {...rest}
         />
       </div>

@@ -74,7 +74,13 @@ export default function CustomInput({
       <Title style={{ fontSize }} error={error}>
         {title}
       </Title>
-      <InputMask name={name} placeholder={placeholder} mask={mask} {...rest} />
+      <InputMask
+        name={name}
+        placeholder={placeholder}
+        mask={mask}
+        type={type}
+        {...rest}
+      />
     </Container>
   );
 }
@@ -92,6 +98,6 @@ CustomInput.propTypes = {
 CustomInput.defaultProps = {
   full: false,
   fontSize: 14,
-  type: 'date',
+  type: 'text',
   style: {},
 };

@@ -3,11 +3,9 @@ import ReactInputMask from 'react-input-mask';
 import PropTypes from 'prop-types';
 import { useField } from '@unform/core';
 
-export default function InputMask({ name, ...rest }) {
+export default function InputMask({ name, type, ...rest }) {
   const inputRef = useRef(null);
   const { fieldName, registerField /* error */ } = useField(name);
-
-  // console.tron.log(rest.type);
 
   useEffect(() => {
     registerField({
@@ -25,9 +23,10 @@ export default function InputMask({ name, ...rest }) {
     });
   }, [fieldName, registerField]);
 
-  return <ReactInputMask ref={inputRef} {...rest} />;
+  return <ReactInputMask ref={inputRef} {...rest} type={type} />;
 }
 
 InputMask.propTypes = {
   name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
